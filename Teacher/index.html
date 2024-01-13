@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>UMS</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+</head>
+<body>
+    <header>
+        <input type="button" class="header-button" value="Home" onclick="showContent('profile')">
+        <input type="button" class="header-button" value="Students" onclick="showContent('students')">
+        <input type="button" class="header-button" value="Researchs" onclick="showContent('researchs')">
+        <input type="button" class="header-button" value="Salary" onclick="showContent('salary')">
+        <input type="button" class="header-button" value="Advisor Desk" onclick="showContent('advisor_desk')">
+        <span class="header-button rightmost" onclick="window.location.href='toggle.html'">
+            <img src="logo.ico" alt="Image" style="height: 30px; float: right;">
+            Sign Out
+        </span>
+    </header>
+    <div id="side_bar">
+        <input type="button" class="sidebar-button" value="Subject-1" onclick="showContent('subject')">
+        <input type="button" class="sidebar-button" value="Settings" onclick="showContent('settings')">
+    </div>
+    <div id="profile" class="content">
+        <p>profile</p>
+    </div>
+    <div id="students" class="content">
+        <p>Students</p>
+    </div>
+    <div id="researchs" class="content">
+        <p>Researchs</p>
+    </div>
+    <div id="salary" class="content">
+        <p>Salary</p>
+    </div>
+    <div id="advisor_desk" class="content">
+        <p>Advisor Desk</p>
+    </div>
+    <div id="subject" class="content">
+        <p>Subject - 1</p>
+    </div>
+    <div id="settings" class="content">
+        <p>Settings</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

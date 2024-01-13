@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>UMS</title>
+  <link rel="icon" type="image/x-icon" href="logo.ico">
+</head>
+<body>
+
+  <div id="form-container">
+    <div id="login-form">
+      <form>
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="login-username" name="username" required><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="login-password" name="password" required><br>
+
+        <input type="button" value="Sign In" onclick="window.location.href='index.html'">
+      </form>
+      <article>
+        <input type="button" value="Sign Up" onclick="toggleForm('signup-form')" >
+      </article>
+    </div>
+
+    <div id="signup-form">
+      <article>
+        <input type="button" value="Log In" onclick="toggleForm('login-form')" ">
+      </article>
+      <form>
+        <h2>Sign Up</h2>
+        <label for="new-username">New Username:</label>
+        <input type="text" id="new-username" name="new-username" required><br>
+        
+        <label for="new-password">New Password:</label>
+        <input type="password" id="new-password" name="new-password" required><br>
+
+        <input type="button" value="Sign Up" onclick="#">
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

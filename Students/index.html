@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>UMS</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+</head>
+<body>
+    <header>
+        <input type="button" class="header-button" value="Home" onclick="showContent('profile')">
+        <input type="button" class="header-button" value="Academics" onclick="showContent('academics')">
+        <input type="button" class="header-button" value="Placements" onclick="showContent('placements')">
+        <input type="button" class="header-button" value="Fee" onclick="showContent('fee')">
+        <input type="button" class="header-button" value="Help Desk" onclick="showContent('help_desk')">
+        <span class="header-button rightmost" onclick="window.location.href='toggle.html'">
+            <img src="logo.ico" alt="Image" style="height: 30px; float: right;">
+            Sign Out
+        </span>
+    </header>
+    <div id="side_bar">
+        <input type="button" class="sidebar-button" value="Course Registration" onclick="showContent('course_registration')">
+        <input type="button" class="sidebar-button" value="Feedback" onclick="showContent('feedback')">
+        <input type="button" class="sidebar-button" value="Settings" onclick="showContent('settings')">
+    </div>
+    <div id="profile" class="content">
+        <p>profile</p>
+    </div>
+    <div id="academics" class="content">
+        <p>Academics</p>
+    </div>
+    <div id="placements" class="content">
+        <p>Placements</p>
+    </div>
+    <div id="fee" class="content">
+        <p>Fee</p>
+    </div>
+    <div id="help_desk" class="content">
+        <p>Help Desk</p>
+    </div>
+    <div id="course_registration" class="content">
+        <p>course_registration</p>
+    </div>
+    <div id="feedback" class="content">
+        <p>Feedback</p>
+    </div>
+    <div id="settings" class="content">
+        <p>Settings</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
