@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page | AUMS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="auth_style.css" />
+  </head>
+
+  <body>
+    <div class="container2">
+      <div class="design">
+        <div class="pill-11 rotate-315"></div>
+        <div class="pill-22 rotate-315"></div>
+        <div class="pill-33 rotate-315"></div>
+        <div class="pill-44 rotate-315"></div>
+      </div>
+      <div class="signup">
+        <h1 class="head">AUMS</h1>
+        <h2 class="title">Signup</h2>
+        <div class="text-input">
+          <i class="ri-user-fill"></i>
+          <input type="text" placeholder="Username" />
+        </div>
+        <div class="text-input">
+          <i class="ri-mail-fill"></i>
+          <input type="email" placeholder="Email" />
+        </div>
+
+        <div class="text-input">
+          <i class="ri-lock-fill"></i>
+          <input type="password" id="passwordInput" placeholder="Password" />
+          <button id="togglePassword" onclick="togglePasswordVisibility()">
+            <i class="ri-eye-fill"></i>
+          </button>
+        </div>
+
+        <div class="text-input">
+          <i class="ri-lock-fill"></i>
+          <input
+            type="password"
+            id="cnfmpasswordInput"
+            placeholder="Confirm Password"
+          />
+          <button
+            id="toggleCnfmPassword"
+            onclick="cnfmTogglePasswordVisibility()"
+          >
+            <i class="ri-eye-fill"></i>
+          </button>
+        </div>
+
+        <button class="login-btn" onclick="animateButton()">SIGNUP</button>
+        <div class="create">
+          <a href="login.html">Already have an Account? Login</a>
+          <i class="ri-arrow-right-fill"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function animateButton() {
+      var button = document.querySelector(".login-btn");
+      button.classList.add("pressed");
+
+      setTimeout(function () {
+        button.classList.remove("pressed");
+      }, 100);
+    }
+
+    function togglePasswordVisibility() {
+      var passwordInput = document.getElementById("passwordInput");
+      var toggleButton = document.getElementById("togglePassword");
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleButton.innerHTML =
+          '<i class="ri-eye-off-fill" style="border: none;"></i>';
+      } else {
+        passwordInput.type = "password";
+        toggleButton.innerHTML =
+          '<i class="ri-eye-fill" style="border: none;"></i>';
+      }
+    }
+
+    function cnfmTogglePasswordVisibility() {
+      var cnfmPasswordInput = document.getElementById("cnfmpasswordInput");
+      var cnfmToggleButton = document.getElementById("toggleCnfmPassword");
+
+      if (cnfmPasswordInput.type === "password") {
+        cnfmPasswordInput.type = "text";
+        cnfmToggleButton.innerHTML =
+          '<i class="ri-eye-off-fill" style="border: none;"></i>';
+      } else {
+        cnfmPasswordInput.type = "password";
+        cnfmToggleButton.innerHTML =
+          '<i class="ri-eye-fill" style="border: none;"></i>';
+      }
+    }
+  </script>
+</html>

@@ -1,9 +1,9 @@
 function showContent(contentId) {
-    // Hide all content elements
-    var contentElements = document.getElementsByClassName('content');
-    for (var i = 0; i < contentElements.length; i++) {
-        contentElements[i].style.display = 'none';
-    }
+    // Hide all content sections
+    var contentSections = document.querySelectorAll('.content');
+    contentSections.forEach(function(section) {
+        section.style.display = 'none';
+    });
 
     // Show the selected content
     var selectedContent = document.getElementById(contentId);
@@ -11,3 +11,10 @@ function showContent(contentId) {
         selectedContent.style.display = 'block';
     }
 }
+
+// Set the default content to 'profile' on page load
+window.onload = function() {
+    showContent('profile');
+};
+
+// You can add more functions or logic as needed

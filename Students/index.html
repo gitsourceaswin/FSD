@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,25 +11,27 @@
     <title>AUMS</title>
     <link rel="icon" type="image/x-icon" href="logo.ico">
 </head>
-<body>
+
+<body onload="showContent('profile')" class="content-container">
     <header>
+        <img id="logo" src="logo.ico" class="rightmost" style="height: 40px;" onclick="showContent('profile')">
         <input type="button" class="header-button" value="Home" onclick="showContent('profile')">
         <input type="button" class="header-button" value="Academics" onclick="showContent('academics')">
         <input type="button" class="header-button" value="Placements" onclick="showContent('placements')">
         <input type="button" class="header-button" value="Fee" onclick="showContent('fee')">
         <input type="button" class="header-button" value="Help Desk" onclick="showContent('help_desk')">
-        <span class="header-button rightmost" onclick="window.location.href='toggle.html'">
-            <img src="logo.ico" alt="Image" style="height: 30px; float: right;">
-            Sign Out
-        </span>
+        <div class="dropdown">
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+                <input type="button" class="header-button" value="Course Registration" onclick="showContent('course_registration')">
+                <input type="button" class="header-button" value="Feedback" onclick="showContent('feedback')">
+                <input type="button" class="header-button" value="Settings" onclick="showContent('settings')">
+            </div>
+        </div>
+        <a href="login.html"><input type="button" class="header-button" value="Sign Out"></a>
     </header>
-    <div id="side_bar">
-        <input type="button" class="sidebar-button" value="Course Registration" onclick="showContent('course_registration')">
-        <input type="button" class="sidebar-button" value="Feedback" onclick="showContent('feedback')">
-        <input type="button" class="sidebar-button" value="Settings" onclick="showContent('settings')">
-    </div>
     <div id="profile" class="content">
-        <p>profile</p>
+        <p>Porfile</p>
     </div>
     <div id="academics" class="content">
         <p>Academics</p>
@@ -43,7 +46,7 @@
         <p>Help Desk</p>
     </div>
     <div id="course_registration" class="content">
-        <p>course_registration</p>
+        <p>Course Registration</p>
     </div>
     <div id="feedback" class="content">
         <p>Feedback</p>
@@ -51,7 +54,7 @@
     <div id="settings" class="content">
         <p>Settings</p>
     </div>
-
     <script src="index.js"></script>
 </body>
+
 </html>
