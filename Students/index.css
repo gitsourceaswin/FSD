@@ -103,7 +103,7 @@ header {
 }
 
 
-#placements,
+
 #fee,
 #help_desk,
 #course_registration,
@@ -193,6 +193,79 @@ header {
 }
 
 #academics th {
+    padding: 10px;
+    text-align: left;
+    background-color: #6361BB;
+    color: #fff;
+    border: 0px;
+}
+
+#placements
+{
+    padding : 50px;
+    background-color: #fff;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#placements table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+#placements table, #placements th, #placements td {
+    border: 1px solid #000000;
+}
+
+#placements th, #placements td {
+    padding: 20px;
+    text-align: left;
+}
+
+#placements th {
+    padding: 10px;
+    text-align: left;
+    background-color: #6361BB;
+    color: #fff;
+    border: 0px;
+}
+
+
+#fee
+{
+    padding : 50px;
+    background-color: #fff;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#fee table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+#fee table, #fee th, #fee td {
+    border: 1px solid #000000;
+}
+
+#fee th, #fee td {
+    padding: 20px;
+    text-align: left;
+}
+
+#fee th {
     padding: 10px;
     text-align: left;
     background-color: #6361BB;
