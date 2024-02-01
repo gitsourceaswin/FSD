@@ -174,12 +174,7 @@ header {
     align-items: center;
     
 }
-#academics th {
-    padding: 10px;
-    text-align: left;
-    background-color: #6361BB;
-    color: #fff;
-}
+
 #academics table {
 
     width: 100%;
@@ -197,3 +192,10 @@ header {
     text-align: left;
 }
 
+#academics th {
+    padding: 10px;
+    text-align: left;
+    background-color: #6361BB;
+    color: #fff;
+    border: 0px;
+}
