@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+nav {
+    padding-left: 30px;
+    background-color: #6361BB;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    align-items: center;
+    margin-left: auto;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+}
+
+.header-button {
+    padding: 10px;
+    background-color: #6361BB;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    font-family: 'Kanit', sans-serif;
+    font-size: large;
+    border: none;
+}
+
+.header-button:hover {
+    background-color: #4b49a4;
+    border-radius: 20px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #6361BB;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #4b49a4;
+    border-radius: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6361BB;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content input {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content input:hover {
+    background-color: #4b49a4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.content {
+    padding-top: 60px;
+}
+
+@media (max-width: 1000px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #6361BB;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}

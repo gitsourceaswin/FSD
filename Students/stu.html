@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stu.css">
+    <script src="stu.js" defer></script>
+    <title>AUMS</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><img src="logo.ico" style="height: 40px;"></label>
+        <ul>
+            <li><input type="button" class="header-button" value="Home" onclick="showContent('profile')"></li>
+            <li><input type="button" class="header-button" value="Academics" onclick="showContent('academics')"></li>
+            <li><input type="button" class="header-button" value="Placements" onclick="showContent('placements')"></li>
+            <li><input type="button" class="header-button" value="Fee" onclick="showContent('fee')"></li>
+            <li><input type="button" class="header-button" value="Help Desk" onclick="showContent('help_desk')"></li>
+            <div class="dropdown">
+                <button class="dropbtn">More</button>
+                <div class="dropdown-content">
+                    <input type="button" class="header-button" value="Course Registration" onclick="showContent('course_registration')">
+                    <input type="button" class="header-button" value="Feedback" onclick="showContent('feedback')">
+                    <input type="button" class="header-button" value="Settings" onclick="showContent('settings')">
+                </div>
+            </div>
+            <li><a href="login.html"><input type="button" class="header-button" value="Sign Out"></a></li>
+        </ul>
+    </nav>
+
+    <div id="profile" class="content">
+        <p>Profile</p>
+    </div>
+    <div id="academics" class="content">
+        <p>Academics</p>
+    </div>
+    <div id="placements" class="content">
+        <p>Placements</p>
+    </div>
+    <div id="fee" class="content">
+        <p>Fee</p>
+    </div>
+    <div id="help_desk" class="content">
+        <p>Help Desk</p>
+    </div>
+    <div id="course_registration" class="content">
+        <p>Course Registration</p>
+    </div>
+    <div id="feedback" class="content">
+        <p>Feedback</p>
+    </div>
+    <div id="settings" class="content">
+        <p>Settings</p>
+    </div>
+</body>
+
+</html>

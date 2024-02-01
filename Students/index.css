@@ -9,15 +9,19 @@ body {
     margin-top: 50px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 .content-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
 }
 
 .content {
-    padding: 20px;
     background-color: #fff;
+    height: 100%;
     display: none;
 }
 
@@ -98,15 +102,98 @@ header {
     display: block;
 }
 
-#profile,
-#academics,
+
 #placements,
 #fee,
 #help_desk,
 #course_registration,
 #feedback,
 #settings {
-    padding: 20px;
+    padding: 50px;
     background-color: #fff;
     display: none;
 }
+
+#profile {
+    background-color: #fff;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#profilepage {
+    padding: 20px;
+    background-color: #7c7acf;
+    color: #fff;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+#profilepage table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#profilepage table, #profilepage th, #profilepage td {
+    border: 1px solid #fff;
+}
+
+#profilepage th, #profilepage td {
+    padding: 10px;
+    text-align: left;
+}
+
+#profilepage th {
+    background-color: #6361BB;
+    color: #fff;
+}
+#profilecontent {
+    padding: 50px;
+    color: #000000;
+    height: 100%;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+#academics
+{
+    padding : 50px;
+    background-color: #fff;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+#academics th {
+    padding: 10px;
+    text-align: left;
+    background-color: #6361BB;
+    color: #fff;
+}
+#academics table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+#academics table, #academics th, #academics td {
+    border: 1px solid #000000;
+}
+
+#academics th, #academics td {
+    padding: 10px;
+    text-align: left;
+}
+
