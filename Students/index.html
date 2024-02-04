@@ -447,7 +447,58 @@
         </div>
     </div>
     <div id="course_registration" class="content">
-        <p>course_registration </p>
+        <div class="accordion-header" onclick="toggleAccordion('reg_course')">
+            <h2 style="color: white;">Registered Courses</h2>
+        </div>
+        <div id="reg_course" class="accordion-table" style="display: none;">
+            <table>
+                <table style="width: 100%;">
+                    <tr>
+                        <th></th>
+                        <th><center>S1</center></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+                    </tr>
+                    <tr>
+                        <td>21CS637</td>
+                        <td>Agile and DevOps</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>21CS601</td>
+                        <td>Data Structure and Algorithm analysis</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+        </div>
+        <div class="accordion-header" onclick="toggleAccordion('new_reg')">
+            <h2 style="color: white;">New Registration</h2>
+        </div>
+        <div id="new_reg" class="accordion-table" style="display: none;">
+            <table>
+                <table style="width: 100%;">
+                    <tr>
+                        <th>S1</th>
+                        <td>Registered</td>
+                    </tr>
+                    <tr>
+                        <th>S2</th>
+                        <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                    </tr>
+                    <tr>
+                        <th>S3</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>S4</th>
+                        <td></td>
+                    </tr>
+                </table>
+        </div>
     </div>
     <div id="feedback" class="content">
         <p>Feedback</p>

@@ -50,12 +50,13 @@ header {
 }
 .header-butto {
     padding: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
+    height: 40px;
     background-color: #6361BB;
     color: #fff;
     transition: background-color 0.3s ease;
     font-family: 'Kanit', sans-serif;
-    font-size: large;
+    font-size: small;
     border-radius: 2px;
     border: none;
 }
@@ -399,12 +400,49 @@ header {
     border: 1px solid #000000;
 }
 
-#settings th, #settingsk td {
+#settings th, #settings td {
     padding: 10px;
     text-align: left;
 }
 
 #settings th {
+    padding: 10px;
+    text-align: left;
+    background-color: #6361BB;
+    color: #fff;
+    border: 0px;
+}
+
+#course_registration
+{
+    font-family: 'Kanit', sans-serif;
+    padding : 50px;
+    background-color: #fff;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+#course_registration table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+#course_registration table, #course_registration th, #course_registration td {
+    border: 1px solid #000000;
+}
+
+#course_registration th, #course_registration td {
+    padding: 10px;
+    text-align: left;
+}
+
+#course_registration th {
     padding: 10px;
     text-align: left;
     background-color: #6361BB;
