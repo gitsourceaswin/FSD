@@ -220,27 +220,27 @@
         <div id="studentDetailss" class="accordion-table" style="display: none;">
             <table>
                 <tr>
-                    <td>Name</td>
+                    <th>Name</th>
                     <td>Aswin U</td>
                 </tr>
                 <tr>
-                    <td>Roll Number</td>
+                    <th>Roll Number</th>
                     <td>cb.sc.p2cse23003</td>
                 </tr>
                 <tr>
-                    <td>Course</td>
+                    <th>Course</th>
                     <td>M.Tech</td>
                 </tr>
                 <tr>
-                    <td>Branch</td>
+                    <th>Branch</th>
                     <td>CSE</td>
                 </tr>
                 <tr>
-                    <td>Batch</td>
+                    <th>Batch</th>
                     <td>2023-25</td>
                 </tr>
                 <tr>
-                    <td>CGPA</td>
+                    <th>CGPA</th>
                     <td>7.58</td>
                 </tr>
             </table>
@@ -453,7 +453,25 @@
         <p>Feedback</p>
     </div>
     <div id="settings" class="content">
-        <p>Settings</p>
+        <div class="accordion-header" onclick="toggleAccordion('chng_password')">
+            <h2 style="color: white;">Change Password</h2>
+        </div>
+        <div id="chng_password" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th><center>Change the Password</center></th>
+                </tr>
+                <tr>
+                    <td>New Password<br><input type="text" style="width: 95%;  border: 0%;"></td>
+                </tr>
+                <tr>
+                    <td>New Password<br><input type="text" style="width: 95%;  border: 0%;"></td>
+                </tr>
+                <tr>
+                    <td>Confirm New Password<br><input type="text" style="width: 95%;  border: 0%;"></td>
+                </tr>
+            </table>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>

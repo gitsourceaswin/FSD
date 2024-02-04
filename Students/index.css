@@ -359,3 +359,40 @@ header {
     color: #fff;
     border: 0px;
 }
+
+#settings
+{
+    font-family: 'Kanit', sans-serif;
+    padding : 50px;
+    background-color: #fff;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+#settings table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+#settings table, #settings th, #settings td {
+    border: 1px solid #000000;
+}
+
+#settings th, #settingsk td {
+    padding: 10px;
+    text-align: left;
+}
+
+#settings th {
+    padding: 10px;
+    text-align: left;
+    background-color: #6361BB;
+    color: #fff;
+    border: 0px;
+}
