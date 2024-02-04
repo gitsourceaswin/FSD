@@ -48,10 +48,25 @@ header {
     font-size: large;
     border: none;
 }
+.header-butto {
+    padding: 10px;
+    margin-left: 20px;
+    background-color: #6361BB;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    font-family: 'Kanit', sans-serif;
+    font-size: large;
+    border-radius: 2px;
+    border: none;
+}
 
 .header-button:hover {
     background-color: #4b49a4;
     border-radius: 20px;
+}
+.header-butto:hover {
+    background-color: #4b49a4;
+    cursor: pointer ;
 }
 
 .rightmost {
