@@ -71,23 +71,23 @@
             <div id="studentDetails" class="accordion-table" style="display: none;">
                 <table>
                     <tr>
-                        <td>Name</td>
+                        <th>Name</th>
                         <td>Aswin U</td>
                     </tr>
                     <tr>
-                        <td>Roll Number</td>
+                        <th>Roll Number</th>
                         <td>cb.sc.p2cse23003</td>
                     </tr>
                     <tr>
-                        <td>Course</td>
+                        <th>Course</th>
                         <td>M.Tech</td>
                     </tr>
                     <tr>
-                        <td>Branch</td>
+                        <th>Branch</th>
                         <td>CSE</td>
                     </tr>
                     <tr>
-                        <td>Batch</td>
+                        <th>Batch</th>
                         <td>2023-25</td>
                     </tr>
                 </table>
@@ -151,6 +151,8 @@
                                     <th>Occupation</th>
                                     <td>Bussiness</td>
                                 </tr>
+                                <th>Contact Number</th>
+                                <td>9446342110</td>
                                 <tr>
                                     <th>E-Mail</th>
                                     <td>unnipkd3211@outlook.com</td>
@@ -166,6 +168,10 @@
                                 <tr>
                                     <th>Occupation</th>
                                     <td>House Wife</td>
+                                </tr>
+                                <tr>
+                                    <th>Contact Number</th>
+                                    <td>8907534986</td>
                                 </tr>
                                 <tr>
                                     <th>E-Mail</th>
@@ -373,10 +379,75 @@
         </table>
     </div>
     <div id="help_desk" class="content">
-        <p>Help Desk</p>
+        <div class="accordion-header" onclick="toggleAccordion('grevSub')">
+            <h2 style="color: white;">Grevience Submission</h2>
+        </div>
+        <div id="grevSub" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <td>Grievance Number</td>
+                    <td>GREVASW00001</td>
+                </tr>
+                <tr>
+                    <td>Addressed to</td>
+                    <td>
+                        <input type="checkbox" id="classAdvisorCheckbox" class="addressedCheckbox">
+                        <label for="classAdvisorCheckbox">Class Advisor</label><br>
+                        <input type="checkbox" id="principalCheckbox" class="addressedCheckbox">
+                        <label for="principalCheckbox">Principal</label><br>
+                        <input type="checkbox" id="deanCheckbox" class="addressedCheckbox">
+                        <label for="deanCheckbox">Dean</label>
+                        <input type="checkbox" id="wardenCheckbox" class="addressedCheckbox">
+                        <label for="wardenCheckbox">Warden</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Related to</td>
+                    <td><select id="r_to" name="cars">
+                        <option value="Fees">Fees</option>
+                        <option value="Result">Result</option>
+                        <option value="Attendance">Attendance</option>
+                        <option value="Hostel">Hostel</option>
+                      </select></td>
+                </tr>
+                <tr>
+                    <td>Issue</td>
+                    <td><input type="memo" style="width: 100%; height: 30px; border: 0%; border-color:"></td>
+                </tr>
+                <tr>
+                    <td>Document</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" class="header-button" value="Submit" onclick="#"></td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <div class="accordion-header" onclick="toggleAccordion('grevStat')">
+            <h2 style="color: white;">Grevience Status</h2>
+        </div>
+        <div id="grevStat" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Grevence Number</th>
+                    <th>Submitted Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>GREVASW00001</td>
+                    <td>12-01-2001</td>
+                    <td>Submitted</td>
+                    <td><a href="#">More</a></td>
+                </tr>
+            </table>
+        </div>
     </div>
     <div id="course_registration" class="content">
-        <p>Course Registration</p>
+        <p>course_registration </p>
     </div>
     <div id="feedback" class="content">
         <p>Feedback</p>

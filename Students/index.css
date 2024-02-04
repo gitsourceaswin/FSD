@@ -105,7 +105,6 @@ header {
 
 
 #fee,
-#help_desk,
 #course_registration,
 #feedback,
 #settings {
@@ -236,6 +235,7 @@ header {
     justify-content: center;
     justify-items: center;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 
@@ -316,6 +316,43 @@ header {
 }
 
 #fee th {
+    padding: 10px;
+    text-align: left;
+    background-color: #6361BB;
+    color: #fff;
+    border: 0px;
+}
+
+#help_desk
+{
+    font-family: 'Kanit', sans-serif;
+    padding : 50px;
+    background-color: #fff;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+#help_desk table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+#help_desk table, #help_desk th, #help_desk td {
+    border: 1px solid #000000;
+}
+
+#help_desk th, #help_desk td {
+    padding: 10px;
+    text-align: left;
+}
+
+#help_desk th {
     padding: 10px;
     text-align: left;
     background-color: #6361BB;
