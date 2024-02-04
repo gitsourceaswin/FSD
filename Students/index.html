@@ -65,149 +65,289 @@
             </table>
         </div>
         <div id="profilecontent">
-            <p>profile content</p>
+            <div class="accordion-header" onclick="toggleAccordion('studentDetails')">
+                <h2 style="color: white;">Student Details</h2>
+            </div>
+            <div id="studentDetails" class="accordion-table" style="display: none;">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>Aswin U</td>
+                    </tr>
+                    <tr>
+                        <td>Roll Number</td>
+                        <td>cb.sc.p2cse23003</td>
+                    </tr>
+                    <tr>
+                        <td>Course</td>
+                        <td>M.Tech</td>
+                    </tr>
+                    <tr>
+                        <td>Branch</td>
+                        <td>CSE</td>
+                    </tr>
+                    <tr>
+                        <td>Batch</td>
+                        <td>2023-25</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="accordion-header" onclick="toggleAccordion('Qualification')">
+                <h2 style="color: white;">Qualification</h2>
+            </div>
+            <div id="Qualification" class="accordion-table" style="display: none;">
+                <table>
+                    <tr>
+                        <th>Board</th>
+                        <th>Qualification</th>
+                        <th>Roll Number</th>
+                        <th>Stream</th>
+                        <th>CGPA / Percentage</th>
+                    </tr>
+                    <tr>
+                        <td>CBSE</td>
+                        <td>10th</td>
+                        <td>4832611</td>
+                        <td>General</td>
+                        <td>8.8</td>
+                    </tr>
+                    <tr>
+                        <td>CBSE</td>
+                        <td>12th</td>
+                        <td>4832611</td>
+                        <td>PCM</td>
+                        <td>71.6</td>
+                    </tr>
+                    <tr>
+                        <td>APJAKTU</td>
+                        <td>B.Tech</td>
+                        <td>ATP19CSE019</td>
+                        <td>CSE</td>
+                        <td>7.58</td>
+                    </tr>
+                    
+                </table>
+            </div>
 
+            
+            <div class="accordion-header" onclick="toggleAccordion('g_det')">
+                <h2 style="color: white;">Guardian Details</h2>
+            </div>
+            <div id="g_det" class="accordion-table" style="display: none;">
+                <table>
+                    <tr>
+                        <th><center>Fathers Details</center></th>
+                        <th><center>Mothers Details</center></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>Fathers Name</th>
+                                    <td>Unnikrishnan S</td>
+                                </tr>
+                                <tr>
+                                    <th>Occupation</th>
+                                    <td>Bussiness</td>
+                                </tr>
+                                <tr>
+                                    <th>E-Mail</th>
+                                    <td>unnipkd3211@outlook.com</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>Mothers Name</th>
+                                    <td>Lakshmi Devi N</td>
+                                </tr>
+                                <tr>
+                                    <th>Occupation</th>
+                                    <td>House Wife</td>
+                                </tr>
+                                <tr>
+                                    <th>E-Mail</th>
+                                    <td>unnipkd3211@outlook.com</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="accordion-header" onclick="toggleAccordion('bnk_det')">
+                <h2 style="color: white;">Bank Details</h2>
+            </div>
+            <div id="bnk_det" class="accordion-table" style="display: none;">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <td>Aswin U</td>
+                    </tr>
+                    <tr>
+                        <th>AC Number</th>
+                        <td>36067556333</td>
+                    </tr>
+                    <tr>
+                        <th>IFCS</th>
+                        <td>SBIPK000001</td>
+                    </tr>
+                    <tr>
+                        <th>Bank</th>
+                        <td>SBI</td>
+                    </tr>
+                    <tr>
+                        <th>Branch</th>
+                        <td>Vadakanthara Palakkad</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
-        </div>
+    </div>
     </div>
     <div id="academics" class="content">
-        <table style="padding-top: 10px;">
-            <tr>
-                <th>Student Details</th>
-                <th></th>
+        <div class="accordion-header" onclick="toggleAccordion('studentDetailss')">
+            <h2 style="color: white;">Student Details</h2>
+        </div>
+        <div id="studentDetailss" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>Aswin U</td>
+                </tr>
+                <tr>
+                    <td>Roll Number</td>
+                    <td>cb.sc.p2cse23003</td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td>M.Tech</td>
+                </tr>
+                <tr>
+                    <td>Branch</td>
+                    <td>CSE</td>
+                </tr>
+                <tr>
+                    <td>Batch</td>
+                    <td>2023-25</td>
+                </tr>
+                <tr>
+                    <td>CGPA</td>
+                    <td>7.58</td>
+                </tr>
+            </table>
+        </div>
 
-            </tr>
-            <tr>
-                <td>Name</td>
-                <td>Aswin U</td>
-            </tr>
-            <tr>
-                <td>Roll Number</td>
-                <td>cb.sc.p2cse23003</td>
-            </tr>
-            <tr>
-                <td>Course</td>
-                <td>M.Tech</td>
-            </tr>
-            <tr>
-                <td>Branch</td>
-                <td>CSE</td>
-            </tr>
-            <tr>
-                <td>Batch</td>
-                <td>2023-25</td>
-            </tr>
-            <tr>
-                <td>CGPA</td>
-                <td>7.58</td>
-            </tr>
-        </table>
-        
-        <table style="margin-top: 50px;">
-            <tr>
-                <th></th>
-                <th><center>S1 Result</center></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Course Code</th>
-                <th>Course Name</th>
-                <th>Grade</th>
-            </tr>
-            <tr>
-                <td>21CS637</td>
-                <td>Agile and DevOps</td>
-                <td>A</td>
-            </tr>
-            <tr>
-                <td>21CS601</td>
-                <td>Data Structure and Algorithm analysis</td>
-                <td>A+</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>SGPA</td>
-                <td>9.8</td>
-            </tr>
-        </table>
-        
-        <table style="margin-top: 50px; margin-bottom: 50px;">
-            <tr>
-                <th></th>
-                <th><center>Transcript</center></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Course Code</th>
-                <th>Course Name</th>
-                <th>Credits</th>
-            </tr>
-            <tr>
-                <td>21CS637</td>
-                <td>Agile and DevOps</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>21CS601</td>
-                <td>Data Structure and Algorithm analysis</td>
-                <td>4</td>
-            </tr>
-        </table>
+        <div class="accordion-header" onclick="toggleAccordion('s1Results')">
+            <h2 style="color: white;">S1 Results</h2>
+        </div>
+        <div id="s1Results" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>21CS637</td>
+                    <td>Agile and DevOps</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>21CS601</td>
+                    <td>Data Structure and Algorithm analysis</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>SGPA</td>
+                    <td>9.8</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="accordion-header" onclick="toggleAccordion('transcripts')">
+            <h2 style="color: white;">Transcript</h2>
+        </div>
+        <div id="transcripts" class="accordion-table" style="display: none;">
+            <table style="width: 100%;">
+                <!-- Transcript Table Content -->
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                </tr>
+                <tr>
+                    <td>21CS637</td>
+                    <td>Agile and DevOps</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>21CS601</td>
+                    <td>Data Structure and Algorithm analysis</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </div>
     </div>
+    
     <div id="placements" class="content">
-        <table style="margin-top: 50px; margin-bottom: 50px;">
-            <tr>
-                <th></th>
-                <th><center>Full Time</center></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Company Name</th>
-                <th>Package</th>
-                <th>Date of Joining</th>
-            </tr>
-            <tr>
-                <td>Google</td>
-                <td>24.5 LPA</td>
-                <td>01.03.2024</td>
-            </tr>
-        </table>
+        <div class="accordion-header" onclick="toggleAccordion('full_time')">
+            <h2 style="color: white;">Full Time</h2>
+        </div>
+        <div id="full_time" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Package</th>
+                    <th>Date of Joining</th>
+                </tr>
+                <tr>
+                    <td>Google</td>
+                    <td>24.5 LPA</td>
+                    <td>01.03.2024</td>
+                </tr>
+            </table>
+        </div>
 
-        <table style="margin-top: 50px; margin-bottom: 50px;">
-            <tr>
-                <th></th>
-                <th><center>Intership</center></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Company Name</th>
-                <th>Package</th>
-                <th>Date of Joining</th>
-            </tr>
-            <tr>
-                <td>Google</td>
-                <td>24.5 LPA</td>
-                <td>01.03.2024</td>
-            </tr>
-        </table>
-        <table style="margin-top: 50px; margin-bottom: 50px;">
-            <tr>
-                <th></th>
-                <th><center>Research</center></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Tag Name</th>
-                <th>Project</th>
-                <th>Guide</th>
-            </tr>
-            <tr>
-                <td>SCN</td>
-                <td>Project Name</td>
-                <td>TSK</td>
-            </tr>
-        </table>
+        <div class="accordion-header" onclick="toggleAccordion('interns')">
+            <h2 style="color: white;">Internships</h2>
+        </div>
+        <div id="interns" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Package</th>
+                    <th>Date of Joining</th>
+                </tr>
+                <tr>
+                    <td>Google</td>
+                    <td>24.5 LPA</td>
+                    <td>01.03.2024</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="accordion-header" onclick="toggleAccordion('research')">
+            <h2 style="color: white;">Research</h2>
+        </div>
+        <div id="research" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Tag Name</th>
+                    <th>Project</th>
+                    <th>Guide</th>
+                </tr>
+                <tr>
+                    <td>SCN</td>
+                    <td>Project Name</td>
+                    <td>TSK</td>
+                </tr>
+            </table>
+        </div>
     </div>
     <div id="fee" class="content">
         <table style="margin-top: 50px; margin-bottom: 50px;">

@@ -18,3 +18,13 @@ window.onload = function() {
 };
 
 // You can add more functions or logic as needed
+function toggleAccordion(sectionId) {
+    var section = document.getElementById(sectionId);
+
+    if (section.style.display === 'table') {
+        section.style.display = 'none';
+    } else {
+        section.style.display = 'table';
+    }
+}
+
