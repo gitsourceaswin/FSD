@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<train>
+    <passanger>
+        <pname>Aswin</pname>
+    </passanger>
+    <passanger>
+        <pname>Nithin</pname>
+    </passanger>
+    <passanger>
+        <pname>SUndar</pname>
+    </passanger>
+    <passanger>
+        <pname>xys</pname>
+    </passanger>
+</train>
