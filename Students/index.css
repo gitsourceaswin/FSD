@@ -121,9 +121,9 @@ header {
     display: block;
 }
 
-.dropdown-content input:hover {
-    /* background-color: #4b49a4; */
-}
+/* .dropdown-content input:hover {
+    background-color: #4b49a4;
+} */
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -232,7 +232,7 @@ font-weight: 500;
     height: 100%;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 45px;
 }
 
 #academics table {
@@ -291,7 +291,7 @@ font-weight: 500;
     height: 100%;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 45px;
 }
 
 #placements table {
@@ -366,7 +366,7 @@ font-weight: 500;
     height: 100%;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 45px
 }
 #help_desk table {
 
@@ -403,7 +403,7 @@ font-weight: 500;
     height: 100%;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 45px;
 }
 #settings table {
 
@@ -440,7 +440,7 @@ font-weight: 500;
     height: 100%;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 45px;
 }
 #course_registration table {
 
@@ -518,7 +518,7 @@ font-weight: 500;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 16px 25px;
     color: black;
     transition: 0.3s;
     font-family: 'Kanit', sans-serif;
@@ -529,12 +529,14 @@ font-weight: 500;
     color: black;
     border-bottom-width: 1.5px;
     border-bottom-style: solid;
+    
 }
 
 .tab button:focus {
     color: black;
     border-bottom-width: 1.5px;
     border-bottom-style: solid;
+    
 }
 
 /* Style for content */
