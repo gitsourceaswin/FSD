@@ -15,6 +15,7 @@ function showContent(contentId) {
 // Set the default content to 'profile' on page load
 window.onload = function() {
     showContent('profile');
+    showStudentDetails();
 };
 
 // You can add more functions or logic as needed
@@ -28,3 +29,20 @@ function toggleAccordion(sectionId) {
     }
 }
 
+// Function to show only the content of the specified tab
+function openTab(tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+
+   
+        document.getElementById('default-tab').style.visibility='hidden';
+    
+}
+
+ function showStudentDetails() {
+        openTab('studentDetails');
+    }

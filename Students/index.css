@@ -30,7 +30,7 @@ header {
     width: 100%;
     background-color: #6361BB;
     color: #fff;
-    height: 50px;
+    height: 65px;
     position: fixed;
     top: 0;
     padding: 10px;
@@ -42,32 +42,38 @@ header {
 .header-button {
     padding: 10px;
     margin-left: 20px;
-    background-color: #6361BB;
+    /* background-color: #6361BB; */
     color: #fff;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
+    background: none;
     font-family: 'Kanit', sans-serif;
     font-size: large;
     border: none;
+    transition: transform 0.3s ease; 
 }
 .header-butto {
     padding: 10px;
-    margin-left: 10px;
-    height: 40px;
-    background-color: #6361BB;
+    margin-left: 20px;
+    /* background-color: #6361BB; */
     color: #fff;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
+    background: none;
     font-family: 'Kanit', sans-serif;
-    font-size: small;
-    border-radius: 2px;
+    font-size: large;
     border: none;
+    transition: transform 0.3s ease; 
 }
 
-.header-button:hover {
-    background-color: #4b49a4;
-    border-radius: 20px;
+.header-button:hover,.header-button:focus {
+    /* background-color: #4b49a4;
+    border-radius: 20px; */
+    cursor: pointer ;
+    
+    border-bottom-style: solid;
+    transform: scale(1.23);
 }
 .header-butto:hover {
-    background-color: #4b49a4;
+    /* background-color: #4b49a4; */
     cursor: pointer ;
 }
 
@@ -82,19 +88,21 @@ header {
 }
 
 .dropbtn {
-    background-color: #6361BB;
-    color: white;
-    padding: 10px;
-    font-size: large;
-    border: none;
-    cursor: pointer;
-    margin-left: 20px;
-    font-family: 'Kanit', sans-serif;
+     /* background-color: #3498db; */
+     background: none;
+     color: white;
+     padding: 10px;
+     font-size: large;
+     border: none;
+     cursor: pointer;
+     margin-left: 20px;
+     font-family: 'Kanit', sans-serif;
+     transition: transform 0.3s ease; 
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #4b49a4;
-    border-radius: 20px;
+    /* background-color: #4b49a4; */
+    transform: scale(1.23);
 }
 
 .dropdown-content {
@@ -103,6 +111,7 @@ header {
     background-color: #6361BB;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 28px;
 }
 
 .dropdown-content input {
@@ -113,7 +122,7 @@ header {
 }
 
 .dropdown-content input:hover {
-    background-color: #4b49a4;
+    /* background-color: #4b49a4; */
 }
 
 .dropdown:hover .dropdown-content {
@@ -151,7 +160,11 @@ header {
     align-items: center;
     float: left;
     position: fixed;
-    margin-top: 50px;
+    margin-top: 65px;
+}
+
+#srollno {
+font-weight: 500;
 }
 
 #profilepage table {
@@ -181,6 +194,7 @@ header {
     display: flex;
     flex-direction: column;
     float: right;
+    /* background-color: #f1f1f1; */
 
 }
 #profilecontent table {
@@ -488,4 +502,42 @@ header {
     background-color: #6361BB;
     color: #fff;
     border: 0px;
+}
+
+.tab {
+    margin-left: 300px;
+    margin-top: 65px;
+    overflow: auto;
+    background-color: #fff;
+    
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color: black;
+    transition: 0.3s;
+    font-family: 'Kanit', sans-serif;
+    font-size: medium;
+}
+
+.tab button:hover {
+    color: black;
+    border-bottom-width: 1.5px;
+    border-bottom-style: solid;
+}
+
+.tab button:focus {
+    color: black;
+    border-bottom-width: 1.5px;
+    border-bottom-style: solid;
+}
+
+/* Style for content */
+.tabcontent {
+    display:contents;
 }
