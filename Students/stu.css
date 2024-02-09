@@ -586,8 +586,10 @@ header {
         display: none;
     }
     #profilepage2{
+        margin-top: 60px;
         padding-bottom: 10px;
         display: flex;
+        background-color: #6361BB;
     }
     #profilecontent{
         width: 100%;
