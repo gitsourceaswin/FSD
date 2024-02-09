@@ -542,6 +542,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: #6361BB;
     }
     #menu-iconss {
         display: none;
@@ -553,7 +554,6 @@ header {
         top: 50px;
         right: 0;
         background-color: #6361BB;
-        z-index: 1;
     }
     #menu-icon {
         cursor: pointer;
@@ -582,20 +582,6 @@ header {
     #header-buttons button:hover {
         background-color: #4b49a4;
         border-radius: 20px;
-    }
-
-    #profile,
-    #academics,
-    #fee,
-    #course_registration,
-    #help_desk,
-    #placements,
-    #feedback,
-    #settings {
-    background-color: #fff;
-    display: none;
-    margin: 10px;
-    padding-right: 20px;
     }
 
 }
