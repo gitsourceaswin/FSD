@@ -64,6 +64,19 @@
                 </tr>
             </table>
         </div>
+
+        <div id="profilepage2">
+                <table>
+                    <tr><center><img src="dumy.png" style="width: 150px;"></center></tr>
+                    <tr>
+                        <td>Aswin</td>
+                    </tr>
+                    <tr>
+                        <td>CB.SC.P2CSE23003</td>
+                    </tr>
+                </table>
+        </div>
+
         <div id="profilecontent">
             <div class="accordion-header" onclick="toggleAccordion('studentDetails')">
                 <h2 style="color: white;">Student Details</h2>
@@ -408,7 +421,8 @@
                         <option value="Result">Result</option>
                         <option value="Attendance">Attendance</option>
                         <option value="Hostel">Hostel</option>
-                      </select></td>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
                     <td>Issue</td>
@@ -501,7 +515,168 @@
         </div>
     </div>
     <div id="feedback" class="content">
-        <p>Feedback</p>
+        <div class="accordion-header" onclick="toggleAccordion('facFed')">
+            <h2 style="color: white;">Faculty Feedback Submission</h2>
+        </div>
+        <div id="facFed" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Faculty Name</th>
+                    <th>Course Code</th>
+                    <th>Rating</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>TSK</td>
+                    <td>RM</td>
+                    <td>
+                        <input type="radio" id="rating-1" name="rating" value="1" style="padding: 30px;">
+                        <label for="rating-1">1</label>
+                        
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2">2</label>
+                        
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3">3</label>
+                        
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4">4</label>
+                        
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5">5</label>
+                    </td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+                <tr>
+                    <td>Dr.Arun Kumar</td>
+                    <td>FSD</td>
+                    <td>
+                        <input type="radio" id="rating-1" name="rating" value="1">
+                        <label for="rating-1">1</label>
+                        
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2">2</label>
+                        
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3">3</label>
+                        
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4">4</label>
+                        
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5">5</label>
+                    </td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+                <tr>
+                    <td>Baskar</td>
+                    <td>AR VR</td>
+                    <td>Already Submitted</td>
+                    <td>Submitted</td>
+                </tr>
+                
+            </table>
+        </div>
+        
+
+        <div class="accordion-header" onclick="toggleAccordion('hosFeed')">
+            <h2 style="color: white;">Hostel Feedback</h2>
+        </div>
+        <div id="hosFeed" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Particular</th>
+                    <th>Rating</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Breakfast</td>
+                    <td>
+                        <input type="radio" id="rating-1" name="rating" value="1" style="padding: 30px;">
+                        <label for="rating-1">1</label>
+                        
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2">2</label>
+                        
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3">3</label>
+                        
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4">4</label>
+                        
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5">5</label>
+                    </td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+                <tr>
+                    <td>Lunch</td>
+                    <td>
+                        <input type="radio" id="rating-1" name="rating" value="1">
+                        <label for="rating-1">1</label>
+                        
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2">2</label>
+                        
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3">3</label>
+                        
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4">4</label>
+                        
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5">5</label>
+                    </td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+                <tr>
+                    <td>Dinner</td>
+                    <td>Already Submitted</td>
+                    <td>Submitted</td>
+                </tr>
+                <tr>
+                    <td>Internet Speed</td>
+                    <td>
+                        <input type="radio" id="rating-1" name="rating" value="1">
+                        <label for="rating-1">1</label>
+                        
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2">2</label>
+                        
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3">3</label>
+                        
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4">4</label>
+                        
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5">5</label>
+                    </td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+                <tr>
+                    <td>Bathroom Facilities</td>
+                    <td>
+                        <input type="radio" id="rating-1" name="rating" value="1">
+                        <label for="rating-1">1</label>
+                        
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2">2</label>
+                        
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3">3</label>
+                        
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4">4</label>
+                        
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5">5</label>
+                    </td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+                
+            </table>
+        </div>
     </div>
     <div id="settings" class="content">
         <div class="accordion-header" onclick="toggleAccordion('chng_password')">
