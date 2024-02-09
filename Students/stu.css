@@ -583,5 +583,19 @@ header {
         background-color: #4b49a4;
         border-radius: 20px;
     }
+    #profile,
+    #academics,
+    #fee,
+    #course_registration,
+    #help_desk,
+    #placements,
+    #feedback,
+    #settings {
+    background-color: #fff;
+    display: none;
+    margin: 10px;
+    padding-right: 20px;
+    }
+
 
 }
