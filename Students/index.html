@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>AUMS</title>
-    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="icon" type="image/x-icon" href="amrita-new-favicon-1.ico">
 </head>
 
 <body onload="showContent('profile')" class="content-container">
     <header>
-        <img id="logo" src="logo.ico" class="rightmost" style="height: 40px;" onclick="showContent('profile')">
+        <img id="logo" src="logo.svg" class="rightmost" style="height: 40px;" onclick="showContent('profile')">
         <input type="button" class="header-button" value="Home" onclick="showContent('profile')">
         <input type="button" class="header-button" value="Academics" onclick="showContent('academics')">
         <input type="button" class="header-button" value="Placements" onclick="showContent('placements')">
@@ -32,15 +32,11 @@
     </header>
     <div id="profile" class="content">
         <div id="profilepage">
-            <table>
-                <tr><img src="dumy.png" style="width: 150px;"></tr>
-                <tr>
-                    <td>Aswin</td>
-                </tr>
-                <tr>
-                    <td>CB.SC.P2CSE23003</td>
-                </tr>
-            </table>
+            <img src="vector-icons-avatar-man.avif" style="width: 70%; padding-bottom: 25px; border-radius: 45%;" ></tr>
+            <h2 id="sname" >Aswin U</h2>
+            <h3 id="srollno">CB.SC.P2CSE23003</h3>
+                
+            
             <table style="padding-top: 10px;">
                 <tr>
                     <td>DOB</td>
@@ -65,6 +61,13 @@
             </table>
         </div>
 
+        <div class="tab">
+            <button class="default-tab" onclick="openTab('studentDetails')">Student Details</button>
+            <button onclick="openTab('Qualification')">Qualification</button>
+            <button onclick="openTab('g_det')">Guardian Details</button>
+            <button onclick="openTab('bnk_det')">Bank Details</button>
+        </div>
+
         <div id="profilepage2">
                 <table>
                     <tr><center><img src="dumy.png" style="width: 150px;"></center></tr>
@@ -78,10 +81,8 @@
         </div>
 
         <div id="profilecontent">
-            <div class="accordion-header" onclick="toggleAccordion('studentDetails')">
-                <h2 style="color: white;">Student Details</h2>
-            </div>
-            <div id="studentDetails" class="accordion-table" style="display: none;">
+            
+            <div id="studentDetails" class="tabcontent">
                 <table>
                     <tr>
                         <th>Name</th>
@@ -106,10 +107,8 @@
                 </table>
             </div>
             
-            <div class="accordion-header" onclick="toggleAccordion('Qualification')">
-                <h2 style="color: white;">Qualification</h2>
-            </div>
-            <div id="Qualification" class="accordion-table" style="display: none;">
+            
+            <div id="Qualification" class="tabcontent">
                 <table>
                     <tr>
                         <th>Board</th>
@@ -144,10 +143,8 @@
             </div>
 
             
-            <div class="accordion-header" onclick="toggleAccordion('g_det')">
-                <h2 style="color: white;">Guardian Details</h2>
-            </div>
-            <div id="g_det" class="accordion-table" style="display: none;">
+            
+            <div id="g_det" class="tabcontent">
                 <table>
                     <tr>
                         <th><center>Fathers Details</center></th>
@@ -195,10 +192,8 @@
                     </tr>
                 </table>
             </div>
-            <div class="accordion-header" onclick="toggleAccordion('bnk_det')">
-                <h2 style="color: white;">Bank Details</h2>
-            </div>
-            <div id="bnk_det" class="accordion-table" style="display: none;">
+            
+            <div id="bnk_det" class="tabcontent">
                 <table>
                     <tr>
                         <th>Name</th>
