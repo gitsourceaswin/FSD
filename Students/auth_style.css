@@ -15,8 +15,8 @@ body {
 }
 
 .container {
-    width: 70vw;
-    height: 80vh;
+    width: 60vw;
+    height: 65%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas: "login";
@@ -28,8 +28,8 @@ body {
 
 
 .container2 {
-    width: 70vw;
-    height: 80vh;
+    width: 60vw;
+    height: 65%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas: "signup";
@@ -141,24 +141,22 @@ body {
     grid-area: login;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     position: relative;
     background: white;
     align-content: center;
-    /* padding-left: 45px; */
 }
 
 .signup {
     grid-area: signup;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     position: relative;
     background: white;
     align-content: center;
-    padding-left: 45px;
 }
 
 .head{
@@ -235,8 +233,8 @@ a.forgot {
 .create {
     display: flex;
     align-items: center;
-    position: absolute;
-    bottom: 30px;
+    position: relative;
+   padding-top: 25px;
 }
 
 .create i {
@@ -263,6 +261,30 @@ a.forgot {
         grid-template-areas: "signup design";
     }
 
+    .login {
+        grid-area: login;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        position: relative;
+        background: white;
+        align-content: center;
+        padding-left: 0px
+    }
+
+    .signup {
+        grid-area: signup;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        position: relative;
+        background: white;
+        align-content: center;
+       margin-left: 45px;
+    }
+    
     .design {
         display: block;
     }
