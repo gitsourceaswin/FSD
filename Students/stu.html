@@ -1,5 +1,5 @@
-<!DOCTYPE HTML>
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,62 +7,704 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stu.css">
-    <script src="stu.js" defer></script>
     <title>AUMS</title>
     <link rel="icon" type="image/x-icon" href="logo.ico">
 </head>
 
-<body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo"><img src="logo.ico" style="height: 40px;"></label>
-        <ul>
-            <li><input type="button" class="header-button" value="Home" onclick="showContent('profile')"></li>
-            <li><input type="button" class="header-button" value="Academics" onclick="showContent('academics')"></li>
-            <li><input type="button" class="header-button" value="Placements" onclick="showContent('placements')"></li>
-            <li><input type="button" class="header-button" value="Fee" onclick="showContent('fee')"></li>
-            <li><input type="button" class="header-button" value="Help Desk" onclick="showContent('help_desk')"></li>
+<body onload="showContent('profile')" class="content-container">
+    <header>
+        <div id="menu-iconss"><img src="logo.ico" style="height: 40px;"></div>
+        <div id="menu-icon">&#9776;</div>
+        <div id="header-buttons" class="rightmost">
+            <input type="button" class="header-button" value="Home" onclick="showContent('profile')">
+            <input type="button" class="header-button" value="Academics" onclick="showContent('academics')">
+            <input type="button" class="header-button" value="Placements" onclick="showContent('placements')">
+            <input type="button" class="header-button" value="Fee" onclick="showContent('fee')">
+            <input type="button" class="header-button" value="Help Desk" onclick="showContent('help_desk')">
             <div class="dropdown">
-                <button class="dropbtn">More</button>
-                <div class="dropdown-content">
-                    <input type="button" class="header-button" value="Course Registration" onclick="showContent('course_registration')">
-                    <input type="button" class="header-button" value="Feedback" onclick="showContent('feedback')">
-                    <input type="button" class="header-button" value="Settings" onclick="showContent('settings')">
-                </div>
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+                <input type="button" class="header-button" value="Course Registration" onclick="showContent('course_registration')">
+                <input type="button" class="header-button" value="Feedback" onclick="showContent('feedback')">
+                <input type="button" class="header-button" value="Settings" onclick="showContent('settings')">
             </div>
-            <li><a href="login.html"><input type="button" class="header-button" value="Sign Out"></a></li>
-        </ul>
-    </nav>
-
+            <a href="login.html"><input type="button" class="header-button" value="Sign Out"></a>
+        </div>
+    </header>
     <div id="profile" class="content">
-        <p>Profile</p>
+        <div id="profilepage">
+            <table>
+                <tr><img src="dumy.png" style="width: 150px;"></tr>
+                <tr>
+                    <td>Aswin</td>
+                </tr>
+                <tr>
+                    <td>CB.SC.P2CSE23003</td>
+                </tr>
+            </table>
+            <table style="padding-top: 10px;">
+                <tr>
+                    <td>DOB</td>
+                    <td>20-10-2001</td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>aswinupkd@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td>M.Tech</td>
+                </tr>
+                <tr>
+                    <td>Branch</td>
+                    <td>CSE</td>
+                </tr>
+                <tr>
+                    <td>Batch</td>
+                    <td>2023-25</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="profilepage2">
+                <table>
+                    <tr><center><img src="dumy.png" style="width: 150px;"></center></tr>
+                    <tr>
+                        <td>Aswin</td>
+                    </tr>
+                    <tr>
+                        <td>CB.SC.P2CSE23003</td>
+                    </tr>
+                </table>
+        </div>
+
+        <div id="profilecontent">
+            <div class="accordion-header" onclick="toggleAccordion('studentDetails')">
+                <h2 style="color: white;">Student Details</h2>
+            </div>
+            <div id="studentDetails" class="accordion-table" style="display: none;">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <td>Aswin U</td>
+                    </tr>
+                    <tr>
+                        <th>Roll Number</th>
+                        <td>cb.sc.p2cse23003</td>
+                    </tr>
+                    <tr>
+                        <th>Course</th>
+                        <td>M.Tech</td>
+                    </tr>
+                    <tr>
+                        <th>Branch</th>
+                        <td>CSE</td>
+                    </tr>
+                    <tr>
+                        <th>Batch</th>
+                        <td>2023-25</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="accordion-header" onclick="toggleAccordion('Qualification')">
+                <h2 style="color: white;">Qualification</h2>
+            </div>
+            <div id="Qualification" class="accordion-table" style="display: none;">
+                <table>
+                    <tr>
+                        <th>Board</th>
+                        <th>Qualification</th>
+                        <th>Roll Number</th>
+                        <th>Stream</th>
+                        <th>CGPA / Percentage</th>
+                    </tr>
+                    <tr>
+                        <td>CBSE</td>
+                        <td>10th</td>
+                        <td>4832611</td>
+                        <td>General</td>
+                        <td>8.8</td>
+                    </tr>
+                    <tr>
+                        <td>CBSE</td>
+                        <td>12th</td>
+                        <td>4832611</td>
+                        <td>PCM</td>
+                        <td>71.6</td>
+                    </tr>
+                    <tr>
+                        <td>APJAKTU</td>
+                        <td>B.Tech</td>
+                        <td>ATP19CSE019</td>
+                        <td>CSE</td>
+                        <td>7.58</td>
+                    </tr>
+                    
+                </table>
+            </div>
+
+            
+            <div class="accordion-header" onclick="toggleAccordion('g_det')">
+                <h2 style="color: white;">Guardian Details</h2>
+            </div>
+            <div id="g_det" class="accordion-table" style="display: none;">
+                <table>
+                    <tr>
+                        <th><center>Fathers Details</center></th>
+                        <th><center>Mothers Details</center></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>Fathers Name</th>
+                                    <td>Unnikrishnan S</td>
+                                </tr>
+                                <tr>
+                                    <th>Occupation</th>
+                                    <td>Bussiness</td>
+                                </tr>
+                                <th>Contact Number</th>
+                                <td>9446342110</td>
+                                <tr>
+                                    <th>E-Mail</th>
+                                    <td>unnipkd3211@outlook.com</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>Mothers Name</th>
+                                    <td>Lakshmi Devi N</td>
+                                </tr>
+                                <tr>
+                                    <th>Occupation</th>
+                                    <td>House Wife</td>
+                                </tr>
+                                <tr>
+                                    <th>Contact Number</th>
+                                    <td>8907534986</td>
+                                </tr>
+                                <tr>
+                                    <th>E-Mail</th>
+                                    <td>unnipkd3211@outlook.com</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="accordion-header" onclick="toggleAccordion('bnk_det')">
+                <h2 style="color: white;">Bank Details</h2>
+            </div>
+            <div id="bnk_det" class="accordion-table" style="display: none;">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <td>Aswin U</td>
+                    </tr>
+                    <tr>
+                        <th>AC Number</th>
+                        <td>36067556333</td>
+                    </tr>
+                    <tr>
+                        <th>IFCS</th>
+                        <td>SBIPK000001</td>
+                    </tr>
+                    <tr>
+                        <th>Bank</th>
+                        <td>SBI</td>
+                    </tr>
+                    <tr>
+                        <th>Branch</th>
+                        <td>Vadakanthara Palakkad</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
     </div>
     <div id="academics" class="content">
-        <p>Academics</p>
+        <div class="accordion-header" onclick="toggleAccordion('studentDetailss')">
+            <h2 style="color: white;">Student Details</h2>
+        </div>
+        <div id="studentDetailss" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>Aswin U</td>
+                </tr>
+                <tr>
+                    <th>Roll Number</th>
+                    <td>cb.sc.p2cse23003</td>
+                </tr>
+                <tr>
+                    <th>Course</th>
+                    <td>M.Tech</td>
+                </tr>
+                <tr>
+                    <th>Branch</th>
+                    <td>CSE</td>
+                </tr>
+                <tr>
+                    <th>Batch</th>
+                    <td>2023-25</td>
+                </tr>
+                <tr>
+                    <th>CGPA</th>
+                    <td>7.58</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="accordion-header" onclick="toggleAccordion('s1Results')">
+            <h2 style="color: white;">S1 Results</h2>
+        </div>
+        <div id="s1Results" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>21CS637</td>
+                    <td>Agile and DevOps</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>21CS601</td>
+                    <td>Data Structure and Algorithm analysis</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>SGPA</td>
+                    <td>9.8</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="accordion-header" onclick="toggleAccordion('transcripts')">
+            <h2 style="color: white;">Transcript</h2>
+        </div>
+        <div id="transcripts" class="accordion-table" style="display: none;">
+            <table style="width: 100%;">
+                <!-- Transcript Table Content -->
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                </tr>
+                <tr>
+                    <td>21CS637</td>
+                    <td>Agile and DevOps</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>21CS601</td>
+                    <td>Data Structure and Algorithm analysis</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </div>
     </div>
+    
     <div id="placements" class="content">
-        <p>Placements</p>
+        <div class="accordion-header" onclick="toggleAccordion('full_time')">
+            <h2 style="color: white;">Full Time</h2>
+        </div>
+        <div id="full_time" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Package</th>
+                    <th>Date of Joining</th>
+                </tr>
+                <tr>
+                    <td>Google</td>
+                    <td>24.5 LPA</td>
+                    <td>01.03.2024</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="accordion-header" onclick="toggleAccordion('interns')">
+            <h2 style="color: white;">Internships</h2>
+        </div>
+        <div id="interns" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Package</th>
+                    <th>Date of Joining</th>
+                </tr>
+                <tr>
+                    <td>Google</td>
+                    <td>24.5 LPA</td>
+                    <td>01.03.2024</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="accordion-header" onclick="toggleAccordion('research')">
+            <h2 style="color: white;">Research</h2>
+        </div>
+        <div id="research" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Tag Name</th>
+                    <th>Project</th>
+                    <th>Guide</th>
+                </tr>
+                <tr>
+                    <td>SCN</td>
+                    <td>Project Name</td>
+                    <td>TSK</td>
+                </tr>
+            </table>
+        </div>
     </div>
     <div id="fee" class="content">
-        <p>Fee</p>
+        <table style="margin-top: 50px; margin-bottom: 50px;">
+            <tr>
+                <th></th>
+                <th><center>Fee Details</center></th>
+                <th></th>
+            <tr>
+                <th>Particulars</th>
+                <th>Actual Fee</th>
+                <th>Applicable Fee</th>
+            </tr>
+            <tr>
+                <td>Tution Fee</td>
+                <td>87000</td>
+                <td>77000</td>
+            </tr>
+            <tr>
+                <td>Exam Fee</td>
+                <td>5400</td>
+                <td>5400</td>
+            </tr>
+        </table>
     </div>
     <div id="help_desk" class="content">
-        <p>Help Desk</p>
+        <div class="accordion-header" onclick="toggleAccordion('grevSub')">
+            <h2 style="color: white;">Grevience Submission</h2>
+        </div>
+        <div id="grevSub" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <td>Grievance Number</td>
+                    <td>GREVASW00001</td>
+                </tr>
+                <tr>
+                    <td>Addressed to</td>
+                    <td>
+                        <input type="checkbox" id="classAdvisorCheckbox" class="addressedCheckbox">
+                        <label for="classAdvisorCheckbox">Class Advisor</label><br>
+                        <input type="checkbox" id="principalCheckbox" class="addressedCheckbox">
+                        <label for="principalCheckbox">Principal</label><br>
+                        <input type="checkbox" id="deanCheckbox" class="addressedCheckbox">
+                        <label for="deanCheckbox">Dean</label>
+                        <input type="checkbox" id="wardenCheckbox" class="addressedCheckbox">
+                        <label for="wardenCheckbox">Warden</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Related to</td>
+                    <td><select id="r_to" name="cars">
+                        <option value="Fees">Fees</option>
+                        <option value="Result">Result</option>
+                        <option value="Attendance">Attendance</option>
+                        <option value="Hostel">Hostel</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Issue</td>
+                    <td><input type="memo" style="width: 100%; height: 30px; border: 0%; border-color:"></td>
+                </tr>
+                <tr>
+                    <td>Document</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <div class="accordion-header" onclick="toggleAccordion('grevStat')">
+            <h2 style="color: white;">Grevience Status</h2>
+        </div>
+        <div id="grevStat" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Grevence Number</th>
+                    <th>Submitted Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>GREVASW00001</td>
+                    <td>12-01-2001</td>
+                    <td>Submitted</td>
+                    <td><a href="#">More</a></td>
+                </tr>
+            </table>
+        </div>
     </div>
     <div id="course_registration" class="content">
-        <p>Course Registration</p>
+        <div class="accordion-header" onclick="toggleAccordion('reg_course')">
+            <h2 style="color: white;">Registered Courses</h2>
+        </div>
+        <div id="reg_course" class="accordion-table" style="display: none;">
+            <table>
+                <table style="width: 100%;">
+                    <tr>
+                        <th></th>
+                        <th><center>S1</center></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+                    </tr>
+                    <tr>
+                        <td>21CS637</td>
+                        <td>Agile and DevOps</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>21CS601</td>
+                        <td>Data Structure and Algorithm analysis</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+        </div>
+        <div class="accordion-header" onclick="toggleAccordion('new_reg')">
+            <h2 style="color: white;">New Registration</h2>
+        </div>
+        <div id="new_reg" class="accordion-table" style="display: none;">
+            <table>
+                <table style="width: 100%;">
+                    <tr>
+                        <th>S1</th>
+                        <td>Registered</td>
+                    </tr>
+                    <tr>
+                        <th>S2</th>
+                        <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                    </tr>
+                    <tr>
+                        <th>S3</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>S4</th>
+                        <td></td>
+                    </tr>
+                </table>
+        </div>
     </div>
     <div id="feedback" class="content">
-        <p>Feedback</p>
+        <div class="accordion-header" onclick="toggleAccordion('facFed')">
+            <h2 style="color: white;">Faculty Feedback Submission</h2>
+        </div>
+        <div id="facFed" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Faculty Name</th>
+                    <th>Course Code</th>
+                    <th>Rating</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>TSK</td>
+                    <td>RM</td>
+                    <td>
+                        <input type="radio" id="rating-1" name="rating" value="1" style="padding: 30px;">
+                        <label for="rating-1">1</label>
+                        
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2">2</label>
+                        
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3">3</label>
+                        
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4">4</label>
+                        
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5">5</label>
+                    </td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+                <tr>
+                    <td>Dr.Arun Kumar</td>
+                    <td>FSD</td>
+                    <td>
+                        <input type="radio" id="rating-1" name="rating" value="1">
+                        <label for="rating-1">1</label>
+                        
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2">2</label>
+                        
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3">3</label>
+                        
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4">4</label>
+                        
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5">5</label>
+                    </td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+                <tr>
+                    <td>Baskar</td>
+                    <td>AR VR</td>
+                    <td>Already Submitted</td>
+                    <td>Submitted</td>
+                </tr>
+                
+            </table>
+        </div>
+        
+
+        <div class="accordion-header" onclick="toggleAccordion('hosFeed')">
+            <h2 style="color: white;">Hostel Feedback</h2>
+        </div>
+        <div id="hosFeed" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th>Particular</th>
+                    <th>Rating</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Breakfast</td>
+                    <td>
+                        <input type="radio" id="rating-1" name="rating" value="1" style="padding: 30px;">
+                        <label for="rating-1">1</label>
+                        
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2">2</label>
+                        
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3">3</label>
+                        
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4">4</label>
+                        
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5">5</label>
+                    </td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+                <tr>
+                    <td>Lunch</td>
+                    <td>
+                        <input type="radio" id="rating-1" name="rating" value="1">
+                        <label for="rating-1">1</label>
+                        
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2">2</label>
+                        
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3">3</label>
+                        
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4">4</label>
+                        
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5">5</label>
+                    </td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+                <tr>
+                    <td>Dinner</td>
+                    <td>Already Submitted</td>
+                    <td>Submitted</td>
+                </tr>
+                <tr>
+                    <td>Internet Speed</td>
+                    <td>
+                        <input type="radio" id="rating-1" name="rating" value="1">
+                        <label for="rating-1">1</label>
+                        
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2">2</label>
+                        
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3">3</label>
+                        
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4">4</label>
+                        
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5">5</label>
+                    </td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+                <tr>
+                    <td>Bathroom Facilities</td>
+                    <td>
+                        <input type="radio" id="rating-1" name="rating" value="1">
+                        <label for="rating-1">1</label>
+                        
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2">2</label>
+                        
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3">3</label>
+                        
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4">4</label>
+                        
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5">5</label>
+                    </td>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+                
+            </table>
+        </div>
     </div>
     <div id="settings" class="content">
-        <p>Settings</p>
+        <div class="accordion-header" onclick="toggleAccordion('chng_password')">
+            <h2 style="color: white;">Change Password</h2>
+        </div>
+        <div id="chng_password" class="accordion-table" style="display: none;">
+            <table>
+                <tr>
+                    <th><center>Change the Password</center></th>
+                </tr>
+                <tr>
+                    <td>New Password<br><input type="text" style="width: 95%;  border: 0%;"></td>
+                </tr>
+                <tr>
+                    <td>New Password<br><input type="text" style="width: 95%;  border: 0%;"></td>
+                </tr>
+                <tr>
+                    <td>Confirm New Password<br><input type="text" style="width: 95%;  border: 0%;"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="header-butto" value="Submit" onclick="#"></td>
+                </tr>
+            </table>
+        </div>
     </div>
+    <script src="stu.js"></script>
 </body>
 
 </html>

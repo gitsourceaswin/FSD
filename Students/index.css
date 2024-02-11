@@ -50,7 +50,9 @@ header {
     font-size: large;
     border: none;
     transition: transform 0.3s ease; 
+    display: inline-flex;
 }
+
 .header-butto {
     padding: 10px;
     margin-left: 20px;
@@ -221,6 +223,42 @@ font-weight: 500;
     color: #fff;
     border: 0px;
 }
+
+
+#profilepage2 {
+    padding: 50px;
+    color: #000000;
+    width: calc(100% - 300px);
+    display: none;
+    flex-direction: column;
+    float: right;
+
+}
+#profilepage2 table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+#profilepage2 table, #profilepage2 th, #profilepage2 td {
+    border: 1px solid #000000;
+}
+
+#profilepage2 th, #profilepage2 td {
+    padding: 10px;
+    text-align: left;
+}
+
+#profilepage2 th {
+    padding: 10px;
+    text-align: left;
+    background-color: #6361BB;
+    color: #fff;
+    border: 0px;
+}
+
 
 #academics
 {
@@ -542,4 +580,41 @@ font-weight: 500;
 /* Style for content */
 .tabcontent {
     display:contents;
+}
+
+@media screen and (max-width: 850px) {
+    header{
+        width: 200px;
+        height: 100%;
+        display: inline-block;
+    }
+    #profilepage {
+        display: none;
+    }
+    #profilepage2 {
+        float: left;
+        width: 100%;
+        display: flex;
+        background-color: #7c7acf;
+    }
+    #profilecontent {
+        float: none;
+        width: 100%;
+    }
+
+    #profile,
+    #academics,
+    #fee,
+    #course_registration,
+    #help_desk,
+    #placements,
+    #feedback,
+    #settings {
+    padding-left: 220px;
+    background-color: #fff;
+    display: none;
+    margin: 10px;
+    padding-right: 20px;
+    }
+
 }
