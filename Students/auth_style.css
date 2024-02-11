@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom right, #3498db, #66ccff,#1abc9c);
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
 }
 
 .container {
@@ -61,7 +61,7 @@ body {
     position: absolute;
     width: 80px;
     height: 200px;
-    background: linear-gradient( #c792ea, #3498db, #1abc9c);
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
     border-radius: 40px;
 }
 
@@ -71,9 +71,23 @@ body {
     position: absolute;
     height: 450px;
     width: 220px;
-    background: linear-gradient( #c792ea, #3498db, #1abc9c);
+    background: linear-gradient(to bottom right, #A4123F, #a53859, #a5294e);
     border-radius: 200px;
-    /*border: 30px solid #99ffff;*/
+    overflow: hidden;
+}
+
+.design .pill-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(logo-colored.svg);
+    
+    
+    background-position: center;
+    border-radius: 200px;
 }
 
 .design .pill-3 {
@@ -82,7 +96,7 @@ body {
     position: absolute;
     height: 200px;
     width: 100px;
-    background: linear-gradient( #c792ea, #3498db, #1abc9c);
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
     border-radius: 70px;
 }
 
@@ -92,7 +106,7 @@ body {
     position: absolute;
     height: 300px;
     width: 120px;
-    background: linear-gradient(#1abc9c, #3498db, #c792ea);
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
     border-radius: 70px;
 }
 
@@ -102,7 +116,7 @@ body {
     position: absolute;
     width: 80px;
     height: 200px;
-    background: linear-gradient(#c792ea, #3498db, #1abc9c);
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
     border-radius: 40px;
 }
 
@@ -112,9 +126,23 @@ body {
     position: absolute;
     height: 450px;
     width: 220px;
-    background: linear-gradient( #c792ea, #3498db, #1abc9c);
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
     border-radius: 200px;
     /*border: 30px solid #99ffff;*/
+}
+
+.design .pill-22::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(logo-colored.svg);
+    
+    
+    background-position: center;
+    border-radius: 200px;
 }
 
 .design .pill-33 {
@@ -123,7 +151,7 @@ body {
     position: absolute;
     height: 200px;
     width: 100px;
-    background: linear-gradient( #c792ea, #3498db, #1abc9c);
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
     border-radius: 70px;
 }
 
@@ -133,7 +161,7 @@ body {
     position: absolute;
     height: 300px;
     width: 120px;
-    background: linear-gradient( #1abc9c, #3498db, #c792ea);
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
     border-radius: 70px;
 }
 
@@ -159,14 +187,33 @@ body {
     align-content: center;
 }
 
+.signup .logo{
+position: absolute;
+top: 35px;
+
+height: 6%;
+}
+
+.logo{
+    position: absolute;
+    top: 55px;
+    
+    height: 6%;
+    }
+
 .head{
-    color: #3399ff;
+    color: #A4123F;
 }
 
 .login h3.title {
     margin: 5px 0 15px 0;
 
 }
+
+/* .login h1.head {
+    color: #A4123F;
+
+} */
 
 .text-input {
     background: #e6e6e6;
@@ -197,10 +244,12 @@ body {
 }
 
 .login-btn {
-    width: 68%;
-    padding: 10px;
+    width: 66%;
+    height: 40px;
+   
+    
     color: white;
-    background: linear-gradient(to left, #3399ff, #66ccff, #99ccff);
+    background: linear-gradient(to bottom right, #A4123F, #83334b,#9c6374);
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -215,7 +264,7 @@ body {
 }
 
 .login-btn:hover {
-    background: linear-gradient(to right, #3399ff, #66ccff, #99ccff);
+    background: linear-gradient(to bottom right, #a5294e, #a53859,#A4123F);
 }
 
 a {
@@ -250,6 +299,16 @@ a.forgot {
     border: none !important;
 }
 
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #9e9e9e;
+    font-size: 12px;
+}
+
 @media (min-width: 768px) {
     .container {
         grid-template-columns: 50% 50%;
@@ -260,6 +319,20 @@ a.forgot {
         grid-template-columns: 50% 50%;
         grid-template-areas: "signup design";
     }
+
+    .logo{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 6%;
+        }
+        
+    .signup .logo{
+        position: absolute;
+        top: 25px;
+        left: 1px;
+        height: 6%;
+        }
 
     .login {
         grid-area: login;
