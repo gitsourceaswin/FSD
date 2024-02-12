@@ -159,7 +159,7 @@ header {
     display: flex;
     font-family: 'Kanit', sans-serif;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     float: left;
     position: fixed;
