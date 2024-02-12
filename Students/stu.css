@@ -172,9 +172,7 @@ header {
     margin-top: 20px;
 }
 
-#profilepage table, #profilepage th, #profilepage td {
-    border: 1px solid #fff;
-}
+
 
 #profilepage th, #profilepage td {
     padding: 10px;
@@ -223,7 +221,7 @@ header {
 
 #profilepage2 {
     padding: 50px;
-    color: #000000;
+    color: #fff;
     display: none;
     flex-direction: column;
 }
@@ -232,12 +230,10 @@ header {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    background-color: #ffffff;
+    background-color: #A4123F;
 }
 
-#profilepage2 table, #profilepage2 th, #profilepage2 td {
-    border: 1px solid #000000;
-}
+
 
 #profilepage2 th, #profilepage2 td {
     padding: 10px;
