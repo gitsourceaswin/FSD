@@ -29,7 +29,7 @@ html, body {
 
 header {
     width: 100%;
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
     height: 50px;
     position: fixed;
@@ -43,7 +43,7 @@ header {
 .header-button {
     padding: 10px;
     margin-left: 20px;
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
     transition: background-color 0.3s ease;
     font-family: 'Kanit', sans-serif;
@@ -56,7 +56,7 @@ header {
     padding: 10px;
     margin-left: 10px;
     height: 40px;
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
     transition: background-color 0.3s ease;
     font-family: 'Kanit', sans-serif;
@@ -66,11 +66,11 @@ header {
 }
 
 .header-button:hover {
-    background-color: #4b49a4;
+    background-color: #b5204d;
     border-radius: 20px;
 }
 .header-butto:hover {
-    background-color: #4b49a4;
+    background-color: #b5204d;
     cursor: pointer ;
 }
 #menu-icon {
@@ -90,10 +90,11 @@ header {
 
 .dropdown {
     display: inline-block;
+    background-color: #A4123F;
 }
 
 .dropbtn {
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: white;
     padding: 10px;
     font-size: large;
@@ -104,14 +105,14 @@ header {
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #4b49a4;
-    border-radius: 20px;
+    background-color: #b5204d;
+    display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #6361BB;
+    background-color: #A4123F;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -124,7 +125,7 @@ header {
 }
 
 .dropdown-content input:hover {
-    background-color: #4b49a4;
+    background-color: #b5204d;
 }
 
 .dropdown:hover .dropdown-content {
@@ -151,7 +152,7 @@ header {
 
 #profilepage {
     padding: 20px;
-    background-color: #7c7acf;
+    background-color: #b5204d;
     color: #fff;
     height: 100%;
     width: 300px;
@@ -181,7 +182,7 @@ header {
 }
 
 #profilepage th {
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
 }
 #profilecontent {
@@ -214,7 +215,7 @@ header {
 #profilecontent th {
     padding: 10px;
     text-align: left;
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
     border: 0px;
 }
@@ -246,7 +247,7 @@ header {
 #profilepage2 th {
     padding: 10px;
     text-align: left;
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
     border: 0px;
 }
@@ -285,13 +286,13 @@ header {
 #academics th {
     padding: 10px;
     text-align: left;
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
     border: 0px;
 }
 
 .accordion-header{
-    background-color: #6361BB;
+    background-color: #A4123F;
     padding: 10px;
     margin-top: 10px;
     align-items: center;
@@ -345,7 +346,7 @@ header {
 #placements th {
     padding: 10px;
     text-align: left;
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
     border: 0px;
 }
@@ -383,7 +384,7 @@ header {
 #fee th {
     padding: 10px;
     text-align: left;
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
     border: 0px;
 }
@@ -420,7 +421,7 @@ header {
 #help_desk th {
     padding: 10px;
     text-align: left;
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
     border: 0px;
 }
@@ -457,7 +458,7 @@ header {
 #settings th {
     padding: 10px;
     text-align: left;
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
     border: 0px;
 }
@@ -494,7 +495,7 @@ header {
 #course_registration th {
     padding: 10px;
     text-align: left;
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
     border: 0px;
 }
@@ -531,7 +532,7 @@ header {
 #feedback th {
     padding: 10px;
     text-align: left;
-    background-color: #6361BB;
+    background-color: #A4123F;
     color: #fff;
     border: 0px;
 }
@@ -541,7 +542,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #6361BB;
+        background-color: #A4123F;
     }
     #menu-iconss {
         display: none;
@@ -552,7 +553,7 @@ header {
         position: absolute;
         top: 50px;
         right: 0;
-        background-color: #6361BB;
+        background-color: #A4123F;
     }
     #menu-icon {
         cursor: pointer;
@@ -562,13 +563,8 @@ header {
         display: flex;
     }
 
-    #menu-icon:hover {
-        background-color: #4b49a4;
-        border-radius: 20px;
-    }
-
     #header-buttons button {
-        background-color: #6361BB;
+        background-color: #A4123F;
         color: #fff;
         transition: background-color 0.3s ease;
         font-family: 'Kanit', sans-serif;
@@ -577,10 +573,12 @@ header {
         padding: 10px;
         margin: 5px;
     }
+    .header-button:hover{
+        border-radius: 0px;
+    }
 
     #header-buttons button:hover {
-        background-color: #4b49a4;
-        border-radius: 20px;
+        background-color: #A4123F;
     }
     #profilepage{
         display: none;
@@ -589,7 +587,7 @@ header {
         margin-top: 60px;
         padding-bottom: 10px;
         display: flex;
-        background-color: #6361BB;
+        background-color: #A4123F;
     }
     #profilecontent{
         width: 100%;
