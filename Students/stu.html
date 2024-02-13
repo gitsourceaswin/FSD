@@ -26,13 +26,14 @@
             <input type="button" class="header-button" value="Fee" onclick="showContent('fee')">
             <input type="button" class="header-button" value="Help Desk" onclick="showContent('help_desk')">
             <div class="dropdown">
-            <button class="dropbtn">More</button>
-            <div class="dropdown-content">
-                <input type="button" class="header-button" value="Course Registration" onclick="showContent('course_registration')">
-                <input type="button" class="header-button" value="Feedback" onclick="showContent('feedback')">
-                <input type="button" class="header-button" value="Settings" onclick="showContent('settings')">
+                <button class="dropbtn">More</button>
+                <div class="dropdown-content">
+                    <input type="button" class="header-button" value="Course Registration" onclick="showContent('course_registration')">
+                    <input type="button" class="header-button" value="Feedback" onclick="showContent('feedback')">
+                    <input type="button" class="header-button" value="Settings" onclick="showContent('settings')">
+                </div>
             </div>
-            <a href="login.html"><input type="button" class="header-button" value="Sign Out"></a>
+            <input type="button" class="header-button" value="Sign Out" onclick="redirectToLogin()">
         </div>
     </header>
     <div id="profile" class="content">

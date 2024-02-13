@@ -49,3 +49,8 @@ window.addEventListener('resize', function () {
         document.getElementById('header-buttons').style.display = 'none';
     }
 });
+
+function redirectToLogin() {
+    // Navigate to the login.html page
+    window.location.href = 'login.html';
+}
