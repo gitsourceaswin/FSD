@@ -54,3 +54,32 @@ function redirectToLogin() {
     // Navigate to the login.html page
     window.location.href = 'login.html';
 }
+
+// Function to validate the grievance form
+function validateGrievanceForm() {
+    // Get form elements
+    var grievanceNumber = document.getElementById("grievanceNumber").value;
+    var addressedToClassAdvisor = document.getElementById("classAdvisorCheckbox").checked;
+    var addressedToPrincipal = document.getElementById("principalCheckbox").checked;
+    var addressedToDean = document.getElementById("deanCheckbox").checked;
+    var addressedToWarden = document.getElementById("wardenCheckbox").checked;
+    var relatedTo = document.getElementById("r_to").value;
+    var issue = document.getElementById("issue").value;
+
+    // Simple validation
+    if (!grievanceNumber || !issue) {
+        alert("Please fill in all the required fields.");
+        return false;
+    }
+
+    // Additional validation if needed
+
+    // Display success message
+    alert("Grievance submitted successfully!");
+    return true;
+}
+
+// Invoke the validation function when the form is submitted
+document.getElementById("grevSubSubmit").addEventListener("click", function () {
+    validateGrievanceForm();
+});

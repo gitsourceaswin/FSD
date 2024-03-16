@@ -90,24 +90,24 @@ header {
 
 .dropdown {
     display: inline-block;
-    background-color: #A4123F;
 }
 
 .dropbtn {
-    background-color: #A4123F;
-    color: white;
-    padding: 10px;
-    font-size: large;
-    border: none;
-    cursor: pointer;
-    margin-left: 20px;
-    font-family: 'Kanit', sans-serif;
-    float: right;
+     /* background-color: #3498db; */
+     background: none;
+     color: white;
+     padding: 10px;
+     font-size: large;
+     border: none;
+     cursor: pointer;
+     margin-left: 20px;
+     font-family: 'Kanit', sans-serif;
+     transition: transform 0.3s ease; 
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #b5204d;
-    display: inline-block;
+    /* background-color: #4b49a4; */
+    /* transform: scale(1.23); */
 }
 
 .dropdown-content {
@@ -116,23 +116,23 @@ header {
     background-color: #A4123F;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 28px;
 }
 
 .dropdown-content input {
     color: #fff;
     padding: 10px;
     text-decoration: none;
-    float: left;
+    display: block;
 }
 
-.dropdown-content input:hover {
-    background-color: #b5204d;
-}
+/* .dropdown-content input:hover {
+    background-color: #4b49a4;
+} */
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 #fee,
 #course_registration,
@@ -142,6 +142,7 @@ header {
     background-color: #fff;
     display: none;
 }
+
 
 #profile {
     background-color: #fff;
@@ -160,7 +161,6 @@ header {
     display: flex;
     font-family: 'Kanit', sans-serif;
     flex-direction: column;
-    
     align-items: center;
     float: left;
     position: fixed;
