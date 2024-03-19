@@ -1,13 +1,24 @@
 // Header.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import menuIcon from './icon.svg'; // Adjust the import path
+
 
 function Header() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
   return (
     <header className="header">
       <nav>
-        <ul className="nav-list">
+        <div className="menu-icon" onClick={toggleSidebar}>
+          <img src={menuIcon} alt="Menu" /> {/* Use the imported SVG icon */}
+        </div>
+        <ul className={sidebarOpen ? "nav-list active" : "nav-list"}>
           <li><Link to="/" className="header-button">Home</Link></li>
           <li><Link to="/academics" className="header-button">Academics</Link></li>
           <li><Link to="/placements" className="header-button">Placements</Link></li>
