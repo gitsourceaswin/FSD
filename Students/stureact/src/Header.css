@@ -3,7 +3,7 @@
   width: 100%;
   background-color: #A4123F;
   color: #fff;
-  height: 65px;
+  height: 40px;
   position: fixed;
   top: 0;
   padding: 10px;
@@ -118,11 +118,14 @@
   }
   
   .menu-icon {
-    width: 0px; /* Adjust the width as needed */
-    height: 0px; /* Adjust the height as needed */
     display: block;
     color: #fff;
     cursor: pointer;
+  }
+  .menu-icon:hover {
+    background-color: #a00836;
+    border-radius: 0.1cm;
+    height: 30px;
   }
   
 }
