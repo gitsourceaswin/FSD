@@ -14,14 +14,109 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+    background-color: #A4123F;
+    color: #fff;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-right: 10px;
+}
+
+.header-button {
+  padding: 10px;
+  margin-right: 20px;
+  /* background-color: #A4123F; */
+  color: #fff;
+  /* transition: background-color 0.3s ease; */
+  background: none;
+  font-family: 'Kanit', sans-serif;
+  font-size: large;
+  border: none;
+  transition: transform 0.3s ease; 
+  display: inline-flex;
+}
+
+.header-butto {
+  padding: 10px;
+  margin-left: 20px;
+  /* background-color: #A4123F; */
+  color: #fff;
+  /* transition: background-color 0.3s ease; */
+  background: none;
+  font-family: 'Kanit', sans-serif;
+  font-size: large;
+  border: none;
+  transition: transform 0.3s ease; 
+}
+
+.header-button:hover,.header-button:focus {
+  /* background-color: #4b49a4;
+  border-radius: 20px; */
+  cursor: pointer ;
+  
+  border-bottom-style: solid;
+  /* transform: scale(1.23); */
+}
+.header-butto:hover {
+  /* background-color: #4b49a4; */
+  cursor: pointer ;
+}
+
+.rightmost {
+  margin-right: auto;
+  margin-left: 30px;
+  height: 50px;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropbtn {
+   /* background-color: #3498db; */
+   background: none;
+   color: white;
+   padding: 10px;
+   font-size: large;
+   border: none;
+   cursor: pointer;
+   margin-right: 20px;
+   font-family: 'Kanit', sans-serif;
+   transition: transform 0.3s ease; 
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  /* background-color: #4b49a4; */
+  /* transform: scale(1.23); */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #A4123F;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 28px;
+}
+
+.dropdown-content input {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* .dropdown-content input:hover {
+  background-color: #4b49a4;
+} */
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .App-link {
