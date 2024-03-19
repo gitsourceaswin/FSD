@@ -8,7 +8,6 @@ function Header() {
   const location = useLocation();
   const [currentTab, setCurrentTab] = useState(getCurrentTabName());
 
-  // Function to get the name of the current tab based on the URL
   function getCurrentTabName() {
     const path = location.pathname;
     switch (path) {
@@ -33,17 +32,14 @@ function Header() {
     }
   }
 
-  // Function to toggle the sidebar
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
-  // Function to handle tab click
   const handleTabClick = () => {
-    setSidebarOpen(false); // Close the sidebar
+    setSidebarOpen(false);
   };
 
-  // Update the current tab name when the location changes
   useEffect(() => {
     setCurrentTab(getCurrentTabName());
   }, [location]);
@@ -52,7 +48,7 @@ function Header() {
     <header className="header">
       <nav>
         <div className="menu-icon" onClick={toggleSidebar}>
-          <p>{currentTab}</p> {/* Display the current tab name */}
+          <p>{currentTab}</p>
         </div>
         <ul className={sidebarOpen ? "nav-list active" : "nav-list"}>
           <li><Link to="/" className="header-button" onClick={handleTabClick}>Home</Link></li>

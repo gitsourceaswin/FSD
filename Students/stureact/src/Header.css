@@ -8,20 +8,20 @@
   top: 0;
   padding: 10px;
   display: flex;
+  justify-content: space-between; /* Align items to the right end */
   align-items: center;
 }
 
 .nav-list {
   padding: 10px;
-  margin-left: 20px;
   background: none;
   color: #fff;
   font-family: 'Kanit', sans-serif;
   font-size: large;
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end; /* Align items to the right end */
+  margin-right: 20px; /* Adjust margin to provide space */
 }
 
 .nav-list.active {
@@ -121,11 +121,7 @@
     display: block;
     color: #fff;
     cursor: pointer;
-  }
-  .menu-icon:hover {
-    background-color: #a00836;
-    border-radius: 0.1cm;
-    height: 30px;
+    margin-left: 20px; /* Adjust margin to provide space */
   }
   
 }
