@@ -1,5 +1,6 @@
 // Home.js
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 
 function Home() {
@@ -12,6 +13,11 @@ function Home() {
       setActiveAccordion(accordionId);
     }
   };
+  useEffect(() => {
+    axios.get('http://localhost:3000/student')
+      .then(res => console.log(res))
+      .catch(err => console.log(err)); // Fix the catch statement
+  }, []); 
 
   return (
     <div className='Profile'>
@@ -282,26 +288,26 @@ function Home() {
         >
           <table>
             <tbody>
-              <tr>
-                <th>Name</th>
-                <td>Aswin U</td>
-              </tr>
-              <tr>
-                <th>Roll Number</th>
-                <td>cb.sc.p2cse23003</td>
-              </tr>
-              <tr>
-                <th>Course</th>
-                <td>M.Tech</td>
-              </tr>
-              <tr>
-                <th>Branch</th>
-                <td>CSE</td>
-              </tr>
-              <tr>
-                <th>Batch</th>
-                <td>2023-25</td>
-              </tr>
+            <tr>
+                        <th>Name</th>
+                        <td>Aswin U</td>
+                    </tr>
+                    <tr>
+                        <th>AC Number</th>
+                        <td>36067556333</td>
+                    </tr>
+                    <tr>
+                        <th>IFCS</th>
+                        <td>SBIPK000001</td>
+                    </tr>
+                    <tr>
+                        <th>Bank</th>
+                        <td>SBI</td>
+                    </tr>
+                    <tr>
+                        <th>Branch</th>
+                        <td>Vadakanthara Palakkad</td>
+                    </tr>
             </tbody>
           </table>
         </div>

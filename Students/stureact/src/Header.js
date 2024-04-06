@@ -27,6 +27,7 @@ function Header() {
         return 'Settings';
       case '/login':
         return 'Sign Out';
+
       default:
         return 'Home';
     }
