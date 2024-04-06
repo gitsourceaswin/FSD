@@ -17,7 +17,7 @@ function Placements() {
     <div className='Placements'>
       <div
         className={`accordion ${activeAccordion === 'Full_Time' ? 'active' : ''}`}
-        onClick={() => toggleAccordion('studentDetails')}
+        onClick={() => toggleAccordion('Full_Time')}
       >
         Full Time
       </div>
