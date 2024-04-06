@@ -2,6 +2,7 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'; // Import Routes
 import Academics from './Academics';
+import './App.css';
 import CourseRegistration from './CourseRegistration';
 import Fee from './Fee';
 import Feedback from './Feedback';
@@ -11,6 +12,7 @@ import Home from './Home';
 import Login from './Login'; // assuming you have a Login component
 import Placements from './Placements';
 import Settings from './Settings';
+
 
 function App() {
   return (

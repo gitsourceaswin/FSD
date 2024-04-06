@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  padding-top: 40px;
 }
 
 .App-logo {
@@ -13,17 +13,15 @@
   }
 }
 
+
 .App-header {
   width: 100%;
     background-color: #A4123F;
     color: #fff;
     height: 65px;
-    position: fixed;
     top: 0;
-    padding: 10px;
     display: flex;
     align-items: center;
-    position: fixed;
     margin-right: 10px;
 }
 
@@ -106,7 +104,6 @@
 
 .dropdown-content input {
   color: #fff;
-  padding: 10px;
   text-decoration: none;
   display: block;
 }

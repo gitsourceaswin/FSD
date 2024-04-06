@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between; /* Align items to the right end */
   align-items: center;
+  font-family: 'Kanit', sans-serif;
 }
 
 .nav-list {
@@ -28,11 +29,13 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 65px;
+  top: 0px;
   left: 0;
   width: 200px;
   background-color: #A4123F;
-  padding: 10px;
+  justify-content: start;
+  height: 100%;
+
 }
 
 .nav-list.active li {
@@ -107,6 +110,12 @@
   font-size: large;
   cursor: pointer;
 }
+#mini{
+  display: none;
+}
+#full{
+  display: flex;
+}
 
 @media screen and (max-width: 850px) {
   .nav-list {
@@ -122,6 +131,12 @@
     color: #fff;
     cursor: pointer;
     margin-left: 20px; /* Adjust margin to provide space */
+  }
+  #mini{
+    display: flex;
+  }
+  #full{
+    display: none;
   }
   
 }
