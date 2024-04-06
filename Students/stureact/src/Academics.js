@@ -1,5 +1,7 @@
 // Academics.js
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+
 import './Academics.css';
 
 function Academics() {
@@ -12,6 +14,13 @@ function Academics() {
       setActiveAccordion(accordionId);
     }
   };
+
+  const [data, setData] = useState([])
+  useEffect(() => {
+    axios.get('http://localhost:3000/student')
+      .then(res => setData(res.data))
+      .catch(err => console.log(err)); // Fix the catch statement
+  }, []); 
 
   return (
     <div className='Academics'>
@@ -29,27 +38,27 @@ function Academics() {
           <tbody>
           <tr>
                     <th>Name</th>
-                    <td>Aswin U</td>
+                    <td>{data.Name}</td>
                 </tr>
                 <tr>
                     <th>Roll Number</th>
-                    <td>cb.sc.p2cse23003</td>
+                    <td>{data.roll_num}</td>
                 </tr>
                 <tr>
                     <th>Course</th>
-                    <td>M.Tech</td>
+                    <td>{data.course}</td>
                 </tr>
                 <tr>
                     <th>Branch</th>
-                    <td>CSE</td>
+                    <td>{data.branch}</td>
                 </tr>
                 <tr>
                     <th>Batch</th>
-                    <td>2023-25</td>
+                    <td>{data.batch}</td>
                 </tr>
                 <tr>
                     <th>CGPA</th>
-                    <td>7.58</td>
+                    <td>{data.cgpa}</td>
                 </tr>
           </tbody>
         </table>
@@ -67,27 +76,14 @@ function Academics() {
       >
         <table>
           <tbody>
-          <tr>
-                    <th>Course Code</th>
-                    <th>Course Name</th>
-                    <th>Grade</th>
-                </tr>
-                <tr>
-                    <td>21CS637</td>
-                    <td>Agile and DevOps</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>21CS601</td>
-                    <td>Data Structure and Algorithm analysis</td>
-                    <td>A+</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>SGPA</td>
-                    <td>9.8</td>
-                </tr>
-          </tbody>
+          {data.examResults && data.examResults.map((examResults, index) => (
+                  <tr key={index}>
+                    <th>Sem {examResults.semNO}</th>
+
+                    <td>{examResults.SGPA}</td>
+                  </tr>
+                ))}
+        </tbody>
         </table>
       </div>
 
@@ -102,23 +98,22 @@ function Academics() {
         className={`tabcontent ${activeAccordion === 'Transcript' ? 'show' : ''}`}
       >
         <table>
-          <tbody>
-          <tr>
-                    <th>Course Code</th>
-                    <th>Course Name</th>
-                    <th>Credits</th>
-                </tr>
-                <tr>
-                    <td>21CS637</td>
-                    <td>Agile and DevOps</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>21CS601</td>
-                    <td>Data Structure and Algorithm analysis</td>
-                    <td>4</td>
-                </tr>
-          </tbody>
+        <thead>
+            <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+             </tr>
+             </thead>
+             <tbody>
+                {data.transcript && data.transcript.map((transcript, index) => (
+                  <tr key={index}>
+                    <td>{transcript.course_code }</td>
+                    <td>{transcript.course_name}</td>
+                    <td>{transcript.no_credits}</td>
+                  </tr>
+                ))}
+              </tbody>
         </table>
       </div>
 

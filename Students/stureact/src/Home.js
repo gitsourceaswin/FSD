@@ -13,9 +13,11 @@ function Home() {
       setActiveAccordion(accordionId);
     }
   };
+
+  const [data, setData] = useState([])
   useEffect(() => {
     axios.get('http://localhost:3000/student')
-      .then(res => console.log(res))
+      .then(res => setData(res.data))
       .catch(err => console.log(err)); // Fix the catch statement
   }, []); 
 
@@ -25,12 +27,12 @@ function Home() {
         <table>
           <tr>
             <th>
-              Aswin U
+              {data.Name}
             </th>
           </tr>
           <tr>
             <th>
-              CB.SC.P2CSE23003
+            {data.roll_num}
             </th>
           </tr>
         </table>
@@ -38,23 +40,23 @@ function Home() {
           <tbody>
             <tr>
               <td>DOB</td>
-              <td>20-10-2001</td>
+              <td>{data.DOB}</td>
             </tr>
             <tr>
               <td>email</td>
-              <td>aswinupkd@gmail.com</td>
+              <td>{data.email}</td>
             </tr>
             <tr>
               <td>Course</td>
-              <td>M.Tech</td>
+              <td>{data.course}</td>
             </tr>
             <tr>
               <td>Branch</td>
-              <td>CSE</td>
+              <td>{data.branch}</td>
             </tr>
             <tr>
               <td>Batch</td>
-              <td>2023-25</td>
+              <td>{data.batch}</td>
             </tr>
           </tbody>
         </table>
@@ -67,10 +69,10 @@ function Home() {
                 <td><center></center></td>
               </tr>
               <tr>
-                <td>Aswin</td>
+                <td>{data.Name}</td>
               </tr>
               <tr>
-                <td>CB.SC.P2CSE23003</td>
+                <td>{data.roll_num}</td>
               </tr>
             </tbody>
           </table>
@@ -89,15 +91,15 @@ function Home() {
             <tbody>
               <tr>
                 <th>Name</th>
-                <td>Aswin U</td>
+                <td>{data.Name}</td>
               </tr>
               <tr>
                 <th>Roll Number</th>
-                <td>cb.sc.p2cse23003</td>
+                <td>{data.roll_num}</td>
               </tr>
               <tr>
                 <th>Course</th>
-                <td>M.Tech</td>
+                <td>{data.course}</td>
               </tr>
               <tr>
                 <th>Branch</th>
@@ -122,36 +124,27 @@ function Home() {
           className={`tabcontent ${activeAccordion === 'Qualification' ? 'show' : ''}`}
         >
           <table>
-            <tbody>
+            <thead>
             <tr>
                         <th>Board</th>
                         <th>Qualification</th>
                         <th>Roll Number</th>
                         <th>Stream</th>
                         <th>CGPA / Percentage</th>
-                    </tr>
-                    <tr>
-                        <td>CBSE</td>
-                        <td>10th</td>
-                        <td>4832611</td>
-                        <td>General</td>
-                        <td>8.8</td>
-                    </tr>
-                    <tr>
-                        <td>CBSE</td>
-                        <td>12th</td>
-                        <td>4832611</td>
-                        <td>PCM</td>
-                        <td>71.6</td>
-                    </tr>
-                    <tr>
-                        <td>APJAKTU</td>
-                        <td>B.Tech</td>
-                        <td>ATP19CSE019</td>
-                        <td>CSE</td>
-                        <td>7.58</td>
-                    </tr>
-            </tbody>
+             </tr>
+             </thead>
+             <tbody>
+                {data.qualification && data.qualification.map((qualification, index) => (
+                  <tr key={index}>
+                    <td>{qualification.board || qualification.university}</td>
+                    <td>{qualification.qual}</td>
+                    <td>{qualification.roll_no}</td>
+                    <td>{qualification.stream || qualification.major}</td>
+                    <td>{qualification.cgpa_percent || qualification.cgpa}</td>
+                  </tr>
+                ))}
+</tbody>
+
           </table>
         </div>
         <div
@@ -177,19 +170,19 @@ function Home() {
                       <tbody>
                         <tr>
                           <th>Fathers Name</th>
-                          <td>Unnikrishnan S</td>
+                          <td>{data.father && data.father.name}</td>
                         </tr>
                         <tr>
                           <th>Occupation</th>
-                          <td>Bussiness</td>
+                          <td>{data.father && data.father.occupation}</td>
                         </tr>
                         <tr>
                           <th>Contact Number</th>
-                          <td>9446342110</td>
+                          <td>{data.father && data.father.phone}</td>
                         </tr>
                         <tr>
                           <th>E-Mail</th>
-                          <td>unnipkd3211@outlook.com</td>
+                          <td>{data.father && data.father.email}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -199,19 +192,19 @@ function Home() {
                       <tbody>
                         <tr>
                           <th>Mothers Name</th>
-                          <td>Lakshmi Devi N</td>
+                          <td>{data.mother && data.mother.name}</td>
                         </tr>
                         <tr>
                           <th>Occupation</th>
-                          <td>House Wife</td>
+                          <td>{data.mother && data.mother.occupation}</td>
                         </tr>
                         <tr>
                           <th>Contact Number</th>
-                          <td>8907534986</td>
+                          <td>{data.mother && data.mother.phone}</td>
                         </tr>
                         <tr>
                           <th>E-Mail</th>
-                          <td>unnipkd3211@outlook.com</td>
+                          <td>{data.mother && data.mother.email}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -230,19 +223,19 @@ function Home() {
                   <tbody>
                         <tr>
                           <th>Fathers Name</th>
-                          <td>Unnikrishnan S</td>
+                          <td>{data.father && data.father.name}</td>
                         </tr>
                         <tr>
                           <th>Occupation</th>
-                          <td>Bussiness</td>
+                          <td>{data.father && data.father.occupation}</td>
                         </tr>
                         <tr>
                           <th>Contact Number</th>
-                          <td>9446342110</td>
+                          <td>{data.father && data.father.phone}</td>
                         </tr>
                         <tr>
                           <th>E-Mail</th>
-                          <td>unnipkd3211@outlook.com</td>
+                          <td>{data.father && data.father.email}</td>
                         </tr>
                       </tbody>
                   </table>
@@ -255,19 +248,19 @@ function Home() {
                   <tbody>
                         <tr>
                           <th>Mothers Name</th>
-                          <td>Lakshmi Devi N</td>
+                          <td>{data.mother && data.mother.name}</td>
                         </tr>
                         <tr>
                           <th>Occupation</th>
-                          <td>House Wife</td>
+                          <td>{data.mother && data.mother.occupation}</td>
                         </tr>
                         <tr>
                           <th>Contact Number</th>
-                          <td>8907534986</td>
+                          <td>{data.mother && data.mother.phone}</td>
                         </tr>
                         <tr>
                           <th>E-Mail</th>
-                          <td>unnipkd3211@outlook.com</td>
+                          <td>{data.mother && data.mother.email}</td>
                         </tr>
                       </tbody>
                   </table>
@@ -290,23 +283,23 @@ function Home() {
             <tbody>
             <tr>
                         <th>Name</th>
-                        <td>Aswin U</td>
+                        <td>{data.bankDetails && data.bankDetails.account_holder}</td>
                     </tr>
                     <tr>
                         <th>AC Number</th>
-                        <td>36067556333</td>
+                        <td>{data.bankDetails && data.bankDetails.ac_number}</td>
                     </tr>
                     <tr>
                         <th>IFCS</th>
-                        <td>SBIPK000001</td>
+                        <td>{data.bankDetails && data.bankDetails.ifsc}</td>
                     </tr>
                     <tr>
                         <th>Bank</th>
-                        <td>SBI</td>
+                        <td>{data.bankDetails && data.bankDetails.bank}</td>
                     </tr>
                     <tr>
                         <th>Branch</th>
-                        <td>Vadakanthara Palakkad</td>
+                        <td>{data.bankDetails && data.bankDetails.branch}</td>
                     </tr>
             </tbody>
           </table>

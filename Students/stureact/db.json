@@ -1,150 +1,171 @@
 {
     "student": {
-      "Name": "John Doe",
-      "roll_num": "CS202001",
-      "DOB": "2000-01-01",
-      "email": "john.doe@example.com",
-      "course": "Computer Science",
-      "branch": "CSE",
-      "batch": "2020",
-      "qualification": {
-        "board": "CBSE",
-        "qual": "Higher Secondary",
-        "roll_no": "123456",
-        "stream": "Science",
-        "cgpa_percent": "95%"
-      },
-      "father": {
-        "name": "John Doe Sr.",
-        "occupation": "Engineer",
-        "phone": "+1234567890",
-        "email": "john.doe.sr@example.com"
-      },
-      "mother": {
-        "name": "Jane Doe",
-        "occupation": "Teacher",
-        "phone": "+9876543210",
-        "email": "jane.doe@example.com"
-      },
-      "bankDetails": {
-        "account_holder": "John Doe",
-        "ac_number": "1234567890",
-        "ifsc": "ABCD0123456",
-        "bank": "ABC Bank",
-        "branch": "Main Branch"
-      },
-      "examResults": [
-        {
-          "semNO": 1,
-          "SGPA": 3.8,
-          "subjDetails": [
+        "Name": "Sunadr",
+        "roll_num": "CB.SC.P2CSE23003",
+        "DOB": "2000-01-01",
+        "email": "auk.doe@example.com",
+        "course": "Computer Science",
+        "branch": "CSE",
+        "batch": "2020",
+        "cgpa": "8.8",
+        "qualification": [
             {
-              "coursecode": "CS101",
-              "course_name": "Introduction to Computer Science",
-              "grade": "A"
+                "board": "CBSE",
+                "qual": "Higher Secondary",
+                "roll_no": "123456",
+                "stream": "Science",
+                "cgpa_percent": "95%"
             },
             {
-              "coursecode": "MATH101",
-              "course_name": "Calculus",
-              "grade": "B+"
+                "board": "ABC Board",
+                "qual": "Secondary School",
+                "roll_no": "654321",
+                "stream": "Science",
+                "cgpa_percent": "92%"
             },
             {
-              "coursecode": "ENG101",
-              "course_name": "English Composition",
-              "grade": "A-"
+                "university": "XYZ University",
+                "qual": "Bachelor's Degree",
+                "major": "Computer Science",
+                "cgpa": "3.8"
+            },
+            {
+                "university": "XYZ University",
+                "qual": "Diploma",
+                "major": "Information Technology",
+                "cgpa": "4.0"
             }
-          ]
+        ],
+        "father": {
+            "name": "Unnikrishnan",
+            "occupation": "Engineer",
+            "phone": "+1234567890",
+            "email": "john.doe.sr@example.com"
         },
-        {
-          "semNO": 2,
-          "SGPA": 3.9,
-          "subjDetails": [
+        "mother": {
+            "name": "Lakshmi devi",
+            "occupation": "Teacher",
+            "phone": "+9876543210",
+            "email": "jane.doe@example.com"
+        },
+        "bankDetails": {
+            "account_holder": "John Doe",
+            "ac_number": "1234567890",
+            "ifsc": "ABCD0123456",
+            "bank": "ABC Bank",
+            "branch": "Main Branch"
+        },
+        "examResults": [
             {
-              "coursecode": "CS201",
-              "course_name": "Data Structures",
-              "grade": "A"
+                "semNO": 1,
+                "SGPA": 3.8,
+                "subjDetails": [
+                    {
+                        "coursecode": "CS101",
+                        "course_name": "Introduction to Computer Science",
+                        "grade": "A"
+                    },
+                    {
+                        "coursecode": "MATH101",
+                        "course_name": "Calculus",
+                        "grade": "B+"
+                    },
+                    {
+                        "coursecode": "ENG101",
+                        "course_name": "English Composition",
+                        "grade": "A-"
+                    }
+                ]
             },
             {
-              "coursecode": "PHYS101",
-              "course_name": "Physics",
-              "grade": "A-"
+                "semNO": 2,
+                "SGPA": 3.9,
+                "subjDetails": [
+                    {
+                        "coursecode": "CS201",
+                        "course_name": "Data Structures",
+                        "grade": "A"
+                    },
+                    {
+                        "coursecode": "PHYS101",
+                        "course_name": "Physics",
+                        "grade": "A-"
+                    },
+                    {
+                        "coursecode": "CHEM101",
+                        "course_name": "Chemistry",
+                        "grade": "B"
+                    }
+                ]
             },
             {
-              "coursecode": "CHEM101",
-              "course_name": "Chemistry",
-              "grade": "B"
+                "semNO": 3,
+                "SGPA": 3.7,
+                "subjDetails": [
+                    {
+                        "coursecode": "CS301",
+                        "course_name": "Algorithms",
+                        "grade": "A"
+                    },
+                    {
+                        "coursecode": "DBMS101",
+                        "course_name": "Database Management",
+                        "grade": "B+"
+                    },
+                    {
+                        "coursecode": "STAT101",
+                        "course_name": "Statistics",
+                        "grade": "A-"
+                    }
+                ]
             }
-          ]
-        },
-        {
-          "semNO": 3,
-          "SGPA": 3.7,
-          "subjDetails": [
+        ],
+        "transcript": [
             {
-              "coursecode": "CS301",
-              "course_name": "Algorithms",
-              "grade": "A"
+                "course_code": "CS101",
+                "course_name": "Introduction to Computer Science",
+                "no_credits": 4
             },
             {
-              "coursecode": "DBMS101",
-              "course_name": "Database Management",
-              "grade": "B+"
+                "course_code": "MATH101",
+                "course_name": "Calculus",
+                "no_credits": 3
             },
             {
-              "coursecode": "STAT101",
-              "course_name": "Statistics",
-              "grade": "A-"
+                "course_code": "ENG101",
+                "course_name": "English Composition",
+                "no_credits": 3
+            },
+            {
+                "course_code": "CS201",
+                "course_name": "Data Structures",
+                "no_credits": 4
+            },
+            {
+                "course_code": "PHYS101",
+                "course_name": "Physics",
+                "no_credits": 3
+            },
+            {
+                "course_code": "CHEM101",
+                "course_name": "Chemistry",
+                "no_credits": 3
+            },
+            {
+                "course_code": "CS301",
+                "course_name": "Algorithms",
+                "no_credits": 4
+            },
+            {
+                "course_code": "DBMS101",
+                "course_name": "Database Management",
+                "no_credits": 3
+            },
+            {
+                "course_code": "STAT101",
+                "course_name": "Statistics",
+                "no_credits": 3
             }
-          ]
-        }
-      ],
-      "transcript": [
-        {
-          "course_code": "CS101",
-          "course_name": "Introduction to Computer Science",
-          "no_credits": 4
-        },
-        {
-          "course_code": "MATH101",
-          "course_name": "Calculus",
-          "no_credits": 3
-        },
-        {
-          "course_code": "ENG101",
-          "course_name": "English Composition",
-          "no_credits": 3
-        },
-        {
-          "course_code": "CS201",
-          "course_name": "Data Structures",
-          "no_credits": 4
-        },
-        {
-          "course_code": "PHYS101",
-          "course_name": "Physics",
-          "no_credits": 3
-        },
-        {
-          "course_code": "CHEM101",
-          "course_name": "Chemistry",
-          "no_credits": 3
-        },
-        {
-          "course_code": "CS301",
-          "course_name": "Algorithms",
-          "no_credits": 4
-        },
-        {
-          "course_code": "DBMS101",
-          "course_name": "Database Management",
-          "no_credits": 3
-        },
-        {
-          "course_code": "STAT101",
-          "course_name": "Statistics",
-          "no_credits": 3
-        }
-      ]
+        ]
     }
-  }
-  
+}
