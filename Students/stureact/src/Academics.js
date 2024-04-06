@@ -75,16 +75,41 @@ function Academics() {
         className={`tabcontent ${activeAccordion === 'Sem_result' ? 'show' : ''}`}
       >
         <table>
-          <tbody>
-          {data.examResults && data.examResults.map((examResults, index) => (
-                  <tr key={index}>
-                    <th>Sem {examResults.semNO}</th>
-
-                    <td>{examResults.SGPA}</td>
-                  </tr>
-                ))}
-        </tbody>
-        </table>
+  <tbody>
+    {data.examResults && data.examResults.map((examResult, index) => (
+      <tr key={index}>
+        <tr>
+        <th>Sem {examResult.semNO}</th>
+        </tr>
+        <tr>
+        <td>
+          <table>
+            <thead>
+              <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              {examResult.subjDetails && examResult.subjDetails.map((subjDetails, index) => (
+                <tr key={index}>
+                  <td>{subjDetails.coursecode}</td>
+                  <td>{subjDetails.course_name}</td>
+                  <td>{subjDetails.grade}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td>SGPA : {examResult.SGPA}</td>
+        </tr>
+      </tr>
+    ))}
+  </tbody>
+</table>
       </div>
 
       <div
