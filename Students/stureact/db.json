@@ -166,6 +166,44 @@
                 "course_name": "Statistics",
                 "no_credits": 3
             }
+        ],
+        "placement": [
+            {
+                "company": "TechCorp",
+                "ctc": "10 LPA",
+                "date_of_joining": "2023-06-01"
+            }
+        ],
+        "internships": [
+            {
+                "company": "InnovateX",
+                "ctc": "Stipend",
+                "date_of_joining": "2022-12-01"
+            }
+        ],
+        "research": [
+            {
+                "Tag_Name": "Machine Learning",
+                "Guide": "Dr. Smith",
+                "project": "Predictive Analysis of Stock Market Trends"
+            }
+        ],
+        "fee_details": [
+            {
+                "particular": "Tuition Fee",
+                "total_fee": "100000",
+                "applicable_fee": "95000"
+            },
+            {
+                "particular": "Hostel Fee",
+                "total_fee": "50000",
+                "applicable_fee": "45000"
+            },
+            {
+                "particular": "Exam Fee",
+                "total_fee": "10000",
+                "applicable_fee": "10000"
+            }
         ]
     }
 }

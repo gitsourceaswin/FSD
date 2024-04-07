@@ -1,5 +1,6 @@
 // Placements.js
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import './Placements.css';
 
 function Placements() {
@@ -12,6 +13,13 @@ function Placements() {
       setActiveAccordion(accordionId);
     }
   };
+
+  const [data, setData] = useState([])
+  useEffect(() => {
+    axios.get('http://localhost:3000/student')
+      .then(res => setData(res.data))
+      .catch(err => console.log(err)); // Fix the catch statement
+  }, []); 
 
   return (
     <div className='Placements'>
@@ -26,18 +34,22 @@ function Placements() {
         className={`tabcontent ${activeAccordion === 'Full_Time' ? 'show' : ''}`}
       >
         <table>
-          <tbody>
-          <tr>
-                    <th>Company Name</th>
-                    <th>Package</th>
-                    <th>Date of Joining</th>
-                </tr>
-                <tr>
-                    <td>Google</td>
-                    <td>24.5 LPA</td>
-                    <td>01.03.2024</td>
-                </tr>
-          </tbody>
+        <thead>
+            <tr>
+                        <th>Company</th>
+                        <th>CTC</th>
+                        <th>Date of Joining</th>
+             </tr>
+             </thead>
+             <tbody>
+                {data.placement && data.placement.map((placement, index) => (
+                  <tr key={index}>
+                    <td>{placement.company }</td>
+                    <td>{placement.ctc}</td>
+                    <td>{placement.date_of_joining}</td>
+                  </tr>
+                ))}
+              </tbody>
         </table>
       </div>
 
@@ -52,18 +64,22 @@ function Placements() {
         className={`tabcontent ${activeAccordion === 'Internship' ? 'show' : ''}`}
       >
         <table>
-          <tbody>
-          <tr>
-                    <th>Company Name</th>
-                    <th>Package</th>
-                    <th>Date of Joining</th>
-                </tr>
-                <tr>
-                    <td>Google</td>
-                    <td>24.5 LPA</td>
-                    <td>01.03.2024</td>
-                </tr>
-          </tbody>
+        <thead>
+            <tr>
+                        <th>Company</th>
+                        <th>CTC</th>
+                        <th>Date of Joining</th>
+             </tr>
+             </thead>
+             <tbody>
+                {data.internships && data.internships.map((internships, index) => (
+                  <tr key={index}>
+                    <td>{internships.company }</td>
+                    <td>{internships.ctc}</td>
+                    <td>{internships.date_of_joining}</td>
+                  </tr>
+                ))}
+              </tbody>
         </table>
       </div>
 
@@ -78,18 +94,22 @@ function Placements() {
         className={`tabcontent ${activeAccordion === 'Research' ? 'show' : ''}`}
       >
         <table>
-          <tbody>
-                <tr>
-                    <th>Tag Name</th>
-                    <th>Project</th>
-                    <th>Guide</th>
-                </tr>
-                <tr>
-                    <td>SCN</td>
-                    <td>Project Name</td>
-                    <td>TSK</td>
-                </tr>
-          </tbody>
+        <thead>
+            <tr>
+                        <th>Tag Name</th>
+                        <th>Guide</th>
+                        <th>Project</th>
+             </tr>
+             </thead>
+             <tbody>
+                {data.research && data.research.map((research, index) => (
+                  <tr key={index}>
+                    <td>{research.Tag_Name }</td>
+                    <td>{research.Guide}</td>
+                    <td>{research.project}</td>
+                  </tr>
+                ))}
+              </tbody>
         </table>
       </div>
 

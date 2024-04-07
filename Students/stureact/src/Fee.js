@@ -1,5 +1,6 @@
 // Fee.js
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import './Fee.css';
 
 function Fee() {
@@ -12,7 +13,12 @@ function Fee() {
       setActiveAccordion(accordionId);
     }
   };
-
+  const [data, setData] = useState([])
+  useEffect(() => {
+    axios.get('http://localhost:3000/student')
+      .then(res => setData(res.data))
+      .catch(err => console.log(err)); // Fix the catch statement
+  }, []); 
   return (
     <div className='Fee'>
       <div
@@ -26,28 +32,22 @@ function Fee() {
         className={`tabcontent ${activeAccordion === 'Full_Time' ? 'show' : ''}`}
       >
         <table>
-          <tbody>
+        <thead>
             <tr>
-                <th></th>
-                <th><center>Fee Details</center></th>
-                <th></th>
-            </tr> {/* Added the closing tag here */}
-            <tr>
-                <th>Particulars</th>
-                <th>Actual Fee</th>
-                <th>Applicable Fee</th>
-            </tr>
-            <tr>
-                <td>Tution Fee</td>
-                <td>87000</td>
-                <td>77000</td>
-            </tr>
-            <tr>
-                <td>Exam Fee</td>
-                <td>5400</td>
-                <td>5400</td>
-            </tr>
-          </tbody>
+                        <th>Particular</th>
+                        <th>Fee</th>
+                        <th>Applicable Fee</th>
+             </tr>
+             </thead>
+             <tbody>
+                {data.fee_details && data.fee_details.map((fee_details, index) => (
+                  <tr key={index}>
+                    <td>{fee_details.particular }</td>
+                    <td>{fee_details.total_fee}</td>
+                    <td>{fee_details.applicable_fee}</td>
+                  </tr>
+                ))}
+              </tbody>
         </table>
       </div>
     </div>
