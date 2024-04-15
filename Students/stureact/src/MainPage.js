@@ -2,7 +2,6 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Academics from './Academics';
-import CourseRegistration from './CourseRegistration';
 import Fee from './Fee';
 import Feedback from './Feedback';
 import Header from './Header';
@@ -24,7 +23,6 @@ function MainPage() {
           <Route path="/placements" element={<Placements />} />
           <Route path="/fee" element={<Fee />} />
           <Route path="/helpdesk" element={<HelpDesk />} />
-          <Route path="/course-registration" element={<CourseRegistration />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/login" element={<Login />} />

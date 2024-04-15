@@ -60,7 +60,6 @@ function Header() {
           <li className="dropdown">
             <button className="dropbtn">More</button>
             <div className="dropdown-content">
-              <Link to="/course-registration" className="header-button" onClick={handleTabClick}>Course Registration</Link>
               <Link to="/feedback" className="header-button" onClick={handleTabClick}>Feedback</Link>
               <Link to="/settings" className="header-button" onClick={handleTabClick}>Settings</Link>
             </div>

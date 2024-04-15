@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <roll_num>CB.SC.P2CSE23003</roll_num>
+        <Name>Sunadr</Name>
+        <DOB>2000-01-01</DOB>
+        <email>auk.doe@example.com</email>
+        <course>Computer Science</course>
+        <branch>CSE</branch>
+        <batch>2020</batch>
+        <cgpa>8.8</cgpa>
+    </student>
+    <!-- Add more student data if needed -->
+</students>
