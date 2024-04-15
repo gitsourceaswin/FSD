@@ -1,12 +1,37 @@
 // Feedback.js
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import './FeedBack.css';
 
 function Feedback() {
+
+  const [data, setData] = useState([])
+  useEffect(() => {
+    axios.get('http://localhost:3000/student')
+      .then(res => setData(res.data))
+      .catch(err => console.log(err)); // Fix the catch statement
+  }, []); 
+
+
   return (
-    <div>
-      <h1>Feedback</h1>
-      <p>Welcome to the Feedback page!</p>
-    </div>
+      <table>
+        <thead>
+            <tr>
+                        <th>Faculty Name</th>
+                        <th>Comment</th>
+                        
+             </tr>
+             </thead>
+             <tbody>
+                {data.feedback && data.feedback.map((feedback, index) => (
+                  <tr key={index}>
+                    <th>{feedback.faculty_name}</th>
+                    <td>{feedback.comment}</td>
+                  </tr>
+                ))}
+              </tbody>
+        </table>
+    
   );
 }
 

@@ -204,6 +204,16 @@
                 "total_fee": "10000",
                 "applicable_fee": "10000"
             }
+        ],
+        "feedback": [
+            {
+                "faculty_name": "Dr. Smith",
+                "comment": "Very helpful and knowledgeable."
+            },
+            {
+                "faculty_name": "Prof. Johnson",
+                "comment": "Excellent teaching style, made difficult concepts easy to understand."
+            },
         ]
     }
 }
