@@ -213,7 +213,19 @@
             {
                 "faculty_name": "Prof. Johnson",
                 "comment": "Excellent teaching style, made difficult concepts easy to understand."
+            }
+        ],
+        "helpdesk": [
+            {
+                "faculty_name": "Prof. Anderson",
+                "question": "How do I register for the upcoming seminar?",
+                "reply": "You can register for the seminar by visiting the seminar registration page on our website and following the instructions provided."
             },
+            {
+                "faculty_name": "Dr. Brown",
+                "question": "What are the prerequisites for the advanced algorithms course?",
+                "reply": "The prerequisites for the advanced algorithms course include a solid understanding of data structures, discrete mathematics, and algorithm analysis."
+            }
         ]
     }
 }
