@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<academics>
+    <semester number="1" cgpa="9.0">
+        <subject code="SUB101" name="Subject 1" grade="A"/>
+        <subject code="SUB102" name="Subject 2" grade="B"/>
+        <subject code="SUB103" name="Subject 3" grade="B+"/>
+        <subject code="SUB104" name="Subject 4" grade="A"/>
+        <subject code="SUB105" name="Subject 5" grade="A-"/>
+        <subject code="SUB106" name="Subject 6" grade="B"/>
+        <subject code="SUB107" name="Subject 7" grade="A"/>
+        <subject code="SUB108" name="Subject 8" grade="B+"/>
+    </semester>
+    <semester number="2" cgpa="9.2">
+        <subject code="SUB201" name="Subject 9" grade="A"/>
+        <subject code="SUB202" name="Subject 10" grade="A+"/>
+        <subject code="SUB203" name="Subject 11" grade="A-"/>
+        <subject code="SUB204" name="Subject 12" grade="B"/>
+        <subject code="SUB205" name="Subject 13" grade="A"/>
+        <subject code="SUB206" name="Subject 14" grade="A-"/>
+        <subject code="SUB207" name="Subject 15" grade="B"/>
+        <subject code="SUB208" name="Subject 16" grade="A"/>
+    </semester>
+    <!-- Add more semesters if needed -->
+</academics>
+x
