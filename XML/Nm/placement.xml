@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<placements>
+    <placement>
+        <type>Full Time</type>
+        <company>Example Inc.</company>
+        <ctc>10,00,000 INR</ctc>
+        <date_of_joining>2024-05-15</date_of_joining>
+    </placement>
+    <placement>
+        <type>Intern</type>
+        <company>ABC Corporation</company>
+        <ctc>6,00,000 INR</ctc>
+        <date_of_joining>2024-06-01</date_of_joining>
+    </placement>
+    <placement>
+        <type>Full Time</type>
+        <company>XYZ Tech</company>
+        <ctc>12,00,000 INR</ctc>
+        <date_of_joining>2024-07-10</date_of_joining>
+    </placement>
+    <!-- Add more placement data if needed -->
+</placements>
