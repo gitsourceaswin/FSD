@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fees>
+    <payment>
+        <particular>Tuition Fee</particular>
+        <total_fee>50000 INR</total_fee>
+        <applicable_fee>40000 INR</applicable_fee>
+    </payment>
+    <payment>
+        <particular>Library Fee</particular>
+        <total_fee>2000 INR</total_fee>
+        <applicable_fee>2000 INR</applicable_fee>
+    </payment>
+    <payment>
+        <particular>Hostel Fee</particular>
+        <total_fee>200000 INR</total_fee>
+        <applicable_fee>98500 INR</applicable_fee>
+    </payment>
+    <payment>
+        <particular>Gym Fee</particular>
+        <total_fee>20000 INR</total_fee>
+        <applicable_fee>2000 INR</applicable_fee>
+    </payment>
+    <payment>
+        <particular>Caution Deposit</particular>
+        <total_fee>2000 INR</total_fee>
+        <applicable_fee>2000 INR</applicable_fee>
+    </payment>
+    <payment>
+        <particular>Lab Fee</particular>
+        <total_fee>2000 INR</total_fee>
+        <applicable_fee>2000 INR</applicable_fee>
+    </payment>
+    <payment>
+        <particular>Exam Fee</particular>
+        <total_fee>2000 INR</total_fee>
+        <applicable_fee>2000 INR</applicable_fee>
+    </payment>
+    <payment>
+        <particular>Industrial visit Fee</particular>
+        <total_fee>10000 INR</total_fee>
+        <applicable_fee>9500 INR</applicable_fee>
+    </payment>
+
+    <!-- Add more payments if needed -->
+</fees>

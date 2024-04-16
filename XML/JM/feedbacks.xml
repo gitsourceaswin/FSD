@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feedbacks>
+    <feedback>
+        <faculty_name>Dr. Smith</faculty_name>
+        <comments>Excellent teaching methodology.</comments>
+    </feedback>
+    <feedback>
+        <faculty_name>Prof. Johnson</faculty_name>
+        <comments>Very knowledgeable and approachable.</comments>
+    </feedback>
+    <!-- Add more feedbacks if needed -->
+</feedbacks>
