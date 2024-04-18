@@ -1,5 +1,9 @@
 /* Main_page.css */
-
+body{
+  justify-content: start;
+  align-items: start;
+   background: white; 
+}
 .MainPage {
   padding-top: 40px;
 }

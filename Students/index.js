@@ -16,7 +16,7 @@ function showContent(contentId) {
 window.onload = function() {
     showContent('profile');
     showStudentDetails();
-};
+}; 
 
 // You can add more functions or logic as needed
 function toggleAccordion(sectionId) {
