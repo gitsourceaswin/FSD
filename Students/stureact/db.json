@@ -1,231 +1,248 @@
 {
-    "student": {
-        "Name": "Sunadr",
-        "roll_num": "CB.SC.P2CSE23003",
-        "DOB": "2000-01-01",
-        "email": "auk.doe@example.com",
-        "course": "Computer Science",
-        "branch": "CSE",
-        "batch": "2020",
-        "cgpa": "8.8",
-        "qualification": [
-            {
-                "board": "CBSE",
-                "qual": "Higher Secondary",
-                "roll_no": "123456",
-                "stream": "Science",
-                "cgpa_percent": "95%"
-            },
-            {
-                "board": "ABC Board",
-                "qual": "Secondary School",
-                "roll_no": "654321",
-                "stream": "Science",
-                "cgpa_percent": "92%"
-            },
-            {
-                "university": "XYZ University",
-                "qual": "Bachelor's Degree",
-                "major": "Computer Science",
-                "cgpa": "3.8"
-            },
-            {
-                "university": "XYZ University",
-                "qual": "Diploma",
-                "major": "Information Technology",
-                "cgpa": "4.0"
-            }
-        ],
-        "father": {
-            "name": "Unnikrishnan",
-            "occupation": "Engineer",
-            "phone": "+1234567890",
-            "email": "john.doe.sr@example.com"
-        },
-        "mother": {
-            "name": "Lakshmi devi",
-            "occupation": "Teacher",
-            "phone": "+9876543210",
-            "email": "jane.doe@example.com"
-        },
-        "bankDetails": {
-            "account_holder": "John Doe",
-            "ac_number": "1234567890",
-            "ifsc": "ABCD0123456",
-            "bank": "ABC Bank",
-            "branch": "Main Branch"
-        },
-        "examResults": [
-            {
-                "semNO": 1,
-                "SGPA": 3.8,
-                "subjDetails": [
-                    {
-                        "coursecode": "CS101",
-                        "course_name": "Introduction to Computer Science",
-                        "grade": "A"
-                    },
-                    {
-                        "coursecode": "MATH101",
-                        "course_name": "Calculus",
-                        "grade": "B+"
-                    },
-                    {
-                        "coursecode": "ENG101",
-                        "course_name": "English Composition",
-                        "grade": "A-"
-                    }
-                ]
-            },
-            {
-                "semNO": 2,
-                "SGPA": 3.9,
-                "subjDetails": [
-                    {
-                        "coursecode": "CS201",
-                        "course_name": "Data Structures",
-                        "grade": "A"
-                    },
-                    {
-                        "coursecode": "PHYS101",
-                        "course_name": "Physics",
-                        "grade": "A-"
-                    },
-                    {
-                        "coursecode": "CHEM101",
-                        "course_name": "Chemistry",
-                        "grade": "B"
-                    }
-                ]
-            },
-            {
-                "semNO": 3,
-                "SGPA": 3.7,
-                "subjDetails": [
-                    {
-                        "coursecode": "CS301",
-                        "course_name": "Algorithms",
-                        "grade": "A"
-                    },
-                    {
-                        "coursecode": "DBMS101",
-                        "course_name": "Database Management",
-                        "grade": "B+"
-                    },
-                    {
-                        "coursecode": "STAT101",
-                        "course_name": "Statistics",
-                        "grade": "A-"
-                    }
-                ]
-            }
-        ],
-        "transcript": [
-            {
-                "course_code": "CS101",
-                "course_name": "Introduction to Computer Science",
-                "no_credits": 4
-            },
-            {
-                "course_code": "MATH101",
-                "course_name": "Calculus",
-                "no_credits": 3
-            },
-            {
-                "course_code": "ENG101",
-                "course_name": "English Composition",
-                "no_credits": 3
-            },
-            {
-                "course_code": "CS201",
-                "course_name": "Data Structures",
-                "no_credits": 4
-            },
-            {
-                "course_code": "PHYS101",
-                "course_name": "Physics",
-                "no_credits": 3
-            },
-            {
-                "course_code": "CHEM101",
-                "course_name": "Chemistry",
-                "no_credits": 3
-            },
-            {
-                "course_code": "CS301",
-                "course_name": "Algorithms",
-                "no_credits": 4
-            },
-            {
-                "course_code": "DBMS101",
-                "course_name": "Database Management",
-                "no_credits": 3
-            },
-            {
-                "course_code": "STAT101",
-                "course_name": "Statistics",
-                "no_credits": 3
-            }
-        ],
-        "placement": [
-            {
-                "company": "TechCorp",
-                "ctc": "10 LPA",
-                "date_of_joining": "2023-06-01"
-            }
-        ],
-        "internships": [
-            {
-                "company": "InnovateX",
-                "ctc": "Stipend",
-                "date_of_joining": "2022-12-01"
-            }
-        ],
-        "research": [
-            {
-                "Tag_Name": "Machine Learning",
-                "Guide": "Dr. Smith",
-                "project": "Predictive Analysis of Stock Market Trends"
-            }
-        ],
-        "fee_details": [
-            {
-                "particular": "Tuition Fee",
-                "total_fee": "100000",
-                "applicable_fee": "95000"
-            },
-            {
-                "particular": "Hostel Fee",
-                "total_fee": "50000",
-                "applicable_fee": "45000"
-            },
-            {
-                "particular": "Exam Fee",
-                "total_fee": "10000",
-                "applicable_fee": "10000"
-            }
-        ],
-        "feedback": [
-            {
-                "faculty_name": "Dr. Smith",
-                "comment": "Very helpful and knowledgeable."
-            },
-            {
-                "faculty_name": "Prof. Johnson",
-                "comment": "Excellent teaching style, made difficult concepts easy to understand."
-            }
-        ],
-        "helpdesk": [
-            {
-                "faculty_name": "Prof. Anderson",
-                "question": "How do I register for the upcoming seminar?",
-                "reply": "You can register for the seminar by visiting the seminar registration page on our website and following the instructions provided."
-            },
-            {
-                "faculty_name": "Dr. Brown",
-                "question": "What are the prerequisites for the advanced algorithms course?",
-                "reply": "The prerequisites for the advanced algorithms course include a solid understanding of data structures, discrete mathematics, and algorithm analysis."
-            }
+  "student": {
+    "Name": "Sundar",
+    "roll_num": "CB.SC.P2CSE23013",
+    "DOB": "2000-01-01",
+    "email": "auk@amrita.edu",
+    "course": "Computer Science",
+    "branch": "CSE",
+    "batch": "2020",
+    "cgpa": "8.8",
+    "qualification": [
+      {
+        "board": "CBSE",
+        "qual": "Higher Secondary",
+        "roll_no": "123456",
+        "stream": "Science",
+        "cgpa_percent": "95%"
+      },
+      {
+        "board": "ABC Board",
+        "qual": "Secondary School",
+        "roll_no": "654321",
+        "stream": "Science",
+        "cgpa_percent": "92%"
+      },
+      {
+        "university": "XYZ University",
+        "qual": "Bachelor's Degree",
+        "major": "Computer Science",
+        "cgpa": "3.8"
+      },
+      {
+        "university": "XYZ University",
+        "qual": "Diploma",
+        "major": "Information Technology",
+        "cgpa": "4.0"
+      }
+    ],
+    "father": {
+      "name": "Unnikrishnan",
+      "occupation": "Engineer",
+      "phone": "+1234567890",
+      "email": "john.doe.sr@amrita.edu"
+    },
+    "mother": {
+      "name": "Lakshmi devi",
+      "occupation": "Teacher",
+      "phone": "+9876543210",
+      "email": "jane.doe@amrita.edu"
+    },
+    "bankDetails": {
+      "account_holder": "John Doe",
+      "ac_number": "1234567890",
+      "ifsc": "ABCD0123456",
+      "bank": "ABC Bank",
+      "branch": "Main Branch"
+    },
+    "examResults": [
+      {
+        "semNO": 1,
+        "SGPA": 3.8,
+        "subjDetails": [
+          {
+            "coursecode": "CS101",
+            "course_name": "Introduction to Computer Science",
+            "grade": "A"
+          },
+          {
+            "coursecode": "MATH101",
+            "course_name": "Calculus",
+            "grade": "B+"
+          },
+          {
+            "coursecode": "ENG101",
+            "course_name": "English Composition",
+            "grade": "A-"
+          }
         ]
+      },
+      {
+        "semNO": 2,
+        "SGPA": 3.9,
+        "subjDetails": [
+          {
+            "coursecode": "CS201",
+            "course_name": "Data Structures",
+            "grade": "A"
+          },
+          {
+            "coursecode": "PHYS101",
+            "course_name": "Physics",
+            "grade": "A-"
+          },
+          {
+            "coursecode": "CHEM101",
+            "course_name": "Chemistry",
+            "grade": "B"
+          }
+        ]
+      },
+      {
+        "semNO": 3,
+        "SGPA": 3.7,
+        "subjDetails": [
+          {
+            "coursecode": "CS301",
+            "course_name": "Algorithms",
+            "grade": "A"
+          },
+          {
+            "coursecode": "DBMS101",
+            "course_name": "Database Management",
+            "grade": "B+"
+          },
+          {
+            "coursecode": "STAT101",
+            "course_name": "Statistics",
+            "grade": "A-"
+          }
+        ]
+      }
+    ],
+    "transcript": [
+      {
+        "course_code": "CS101",
+        "course_name": "Introduction to Computer Science",
+        "no_credits": 4
+      },
+      {
+        "course_code": "MATH101",
+        "course_name": "Calculus",
+        "no_credits": 3
+      },
+      {
+        "course_code": "ENG101",
+        "course_name": "English Composition",
+        "no_credits": 3
+      },
+      {
+        "course_code": "CS201",
+        "course_name": "Data Structures",
+        "no_credits": 4
+      },
+      {
+        "course_code": "PHYS101",
+        "course_name": "Physics",
+        "no_credits": 3
+      },
+      {
+        "course_code": "CHEM101",
+        "course_name": "Chemistry",
+        "no_credits": 3
+      },
+      {
+        "course_code": "CS301",
+        "course_name": "Algorithms",
+        "no_credits": 4
+      },
+      {
+        "course_code": "DBMS101",
+        "course_name": "Database Management",
+        "no_credits": 3
+      },
+      {
+        "course_code": "STAT101",
+        "course_name": "Statistics",
+        "no_credits": 3
+      }
+    ],
+    "placement": [
+      {
+        "company": "TechCorp",
+        "ctc": "10 LPA",
+        "date_of_joining": "2023-06-01"
+      }
+    ],
+    "internships": [
+      {
+        "company": "InnovateX",
+        "ctc": "Stipend",
+        "date_of_joining": "2022-12-01"
+      }
+    ],
+    "research": [
+      {
+        "Tag_Name": "Machine Learning",
+        "Guide": "Dr. Smith",
+        "project": "Predictive Analysis of Stock Market Trends"
+      }
+    ],
+    "fee_details": [
+      {
+        "particular": "Tuition Fee",
+        "total_fee": "100000",
+        "applicable_fee": "95000"
+      },
+      {
+        "particular": "Hostel Fee",
+        "total_fee": "50000",
+        "applicable_fee": "45000"
+      },
+      {
+        "particular": "Exam Fee",
+        "total_fee": "10000",
+        "applicable_fee": "10000"
+      }
+    ],
+    "feedback": [
+      {
+        "faculty_name": "Dr. Smith",
+        "comment": "Very helpful and knowledgeable."
+      },
+      {
+        "faculty_name": "Prof. Johnson",
+        "comment": "Excellent teaching style, made difficult concepts easy to understand."
+      }
+    ],
+    "helpdesk": [
+      {
+        "faculty_name": "Prof. Anderson",
+        "question": "How do I register for the upcoming seminar?",
+        "reply": "You can register for the seminar by visiting the seminar registration page on our website and following the instructions provided."
+      },
+      {
+        "faculty_name": "Dr. Brown",
+        "question": "What are the prerequisites for the advanced algorithms course?",
+        "reply": "The prerequisites for the advanced algorithms course include a solid understanding of data structures, discrete mathematics, and algorithm analysis."
+      }
+    ]
+  },
+  "users": [
+    {
+      "email": "user1@example.com",
+      "password": "cGFzc3dvcmQ=",
+      "id": "d061"
+    },
+    {
+      "email": "user2@example.com",
+      "password": "cGFzc3dvcmQ=",
+      "id": "a4eb"
+    },
+    {
+      "email": "sundar@amrita.edu",
+      "password": "cGFzc3dvcmQ=",
+      "id": "6b61"
     }
+  ]
 }

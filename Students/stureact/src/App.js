@@ -1,12 +1,26 @@
 // App.js
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import MainPage from './MainPage';
+import Login from './Login';
+import Admin from './Admin';
 
 function App() {
+  const [user, setUser] = useState(null);
+  const handleLogin = (userData) => {
+    // Perform authentication logic here, set user state accordingly
+    setUser(userData);
+  };
   return (
-    <MainPage />
+    <div>
+      {user ? (
+        user.isAdmin? <Admin/> :
+        <MainPage/>
+      ) : (
+        <Login onLogin={handleLogin} />
+      )}
+    </div>
   );
-}
+} 
 
 export default App;
