@@ -9,21 +9,21 @@ xhr.onreadystatechange = function() {
                     if (xsl.status === 200) {
                         var xsltProcessor = new XSLTProcessor();
                         xsltProcessor.importStylesheet(xsl.responseXML);
-                        var resultDocument = xsltProcessor.transformToFragment(xml, document);
-                        var tableBody = document.querySelector('#academicTable tbody');
-                        tableBody.innerHTML = '';
-                        tableBody.appendChild(resultDocument);
+                        var transformedResult = xsltProcessor.transformToFragment(xml, document);
+                        var resultsContainer = document.getElementById('resultsContainer');
+                        resultsContainer.innerHTML = '';
+                        resultsContainer.appendChild(transformedResult);
                     } else {
                         console.error('Failed to fetch XSLT stylesheet.');
                     }
                 }
             };
-            xsl.open('GET', 'academics_transform.xsl', true);
+            xsl.open('GET', 'results_transform.xsl', true);
             xsl.send(null);
         } else {
             console.error('Failed to fetch XML data.');
         }
     }
 };
-xhr.open('GET', 'academics.xml', true);
+xhr.open('GET', 'results.xml', true);
 xhr.send(null);

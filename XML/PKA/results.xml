@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+    <semester num="1" sgpa="8.5">
+        <course>
+            <code>CSE101</code>
+            <name>Introduction to Computer Science</name>
+            <credit>3</credit>
+        </course>
+        <course>
+            <code>MTH101</code>
+            <name>Calculus</name>
+            <credit>4</credit>
+        </course>
+        <course>
+            <code>CSE102</code>
+            <name>Programming Fundamentals</name>
+            <credit>3</credit>
+        </course>
+        <course>
+            <code>CSE103</code>
+            <name>Computer Organization and Architecture</name>
+            <credit>4</credit>
+        </course>
+        <course>
+            <code>CSE104</code>
+            <name>Discrete Mathematics</name>
+            <credit>3</credit>
+        </course>
+    </semester>
+    <semester num="2" sgpa="8.7">
+        <course>
+            <code>CSE201</code>
+            <name>Data Structures and Algorithms</name>
+            <credit>4</credit>
+        </course>
+        <course>
+            <code>CSE202</code>
+            <name>Database Management Systems</name>
+            <credit>3</credit>
+        </course>
+        <course>
+            <code>CSE203</code>
+            <name>Operating Systems</name>
+            <credit>4</credit>
+        </course>
+        <course>
+            <code>CSE204</code>
+            <name>Software Engineering</name>
+            <credit>3</credit>
+        </course>
+        <course>
+            <code>CSE205</code>
+            <name>Computer Networks</name>
+            <credit>4</credit>
+        </course>
+    </semester>
+    <!-- Add more semesters if needed -->
+</results>
