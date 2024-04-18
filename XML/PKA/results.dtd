@@ -1,0 +1,12 @@
+<!DOCTYPE results [
+    <!ELEMENT results (semester+)>
+    <!ELEMENT semester (course+)>
+    <!ATTLIST semester
+        num     CDATA   #REQUIRED
+        sgpa    CDATA   #REQUIRED
+    >
+    <!ELEMENT course (code, name, credit)>
+    <!ELEMENT code (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT credit (#PCDATA)>
+]>

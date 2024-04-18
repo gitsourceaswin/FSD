@@ -1,0 +1,6 @@
+<!DOCTYPE feedbacks [
+    <!ELEMENT feedbacks (feedback+)>
+    <!ELEMENT feedback (faculty_name, comments)>
+    <!ELEMENT faculty_name (#PCDATA)>
+    <!ELEMENT comments (#PCDATA)>
+]>

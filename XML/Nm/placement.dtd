@@ -1,0 +1,8 @@
+<!DOCTYPE placements [
+    <!ELEMENT placements (placement+)>
+    <!ELEMENT placement (type, company, ctc, date_of_joining)>
+    <!ELEMENT type (#PCDATA)>
+    <!ELEMENT company (#PCDATA)>
+    <!ELEMENT ctc (#PCDATA)>
+    <!ELEMENT date_of_joining (#PCDATA)>
+]>

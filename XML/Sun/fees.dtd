@@ -1,0 +1,7 @@
+<!DOCTYPE fees [
+    <!ELEMENT fees (payment+)>
+    <!ELEMENT payment (particular, total_fee, applicable_fee)>
+    <!ELEMENT particular (#PCDATA)>
+    <!ELEMENT total_fee (#PCDATA)>
+    <!ELEMENT applicable_fee (#PCDATA)>
+]>

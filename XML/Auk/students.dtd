@@ -1,0 +1,12 @@
+<!DOCTYPE students [
+    <!ELEMENT students (student+)>
+    <!ELEMENT student (roll_num, Name, DOB, email, course, branch, batch, cgpa)>
+    <!ELEMENT roll_num (#PCDATA)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT DOB (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT course (#PCDATA)>
+    <!ELEMENT branch (#PCDATA)>
+    <!ELEMENT batch (#PCDATA)>
+    <!ELEMENT cgpa (#PCDATA)>
+]>
